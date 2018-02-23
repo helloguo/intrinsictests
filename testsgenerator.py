@@ -47,7 +47,12 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             for i in range(2, len(elements)):
                 element = elements[i]
                 if element.endswith(',') or element.endswith(')'):
-                    parameters.append(element[:-1])
+                    parameter = element[:-1]
+                    # if the parameter is imm, we should put a ramdom imm
+                    # we put '1' here
+                    if parameter == 'imm8':
+                        parameter = '1'
+                    parameters.append(parameter)
 
             if returnType != 'void':
                 callIntrinsic = "ret = " + intrinsicName + "("
@@ -73,7 +78,7 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             if returnType != "void":
                 intrinsicTestDefinition += ("    " + returnType + " ret;\n")
             intrinsicTestDefinition += "    clock_t t1 = clock();\n"
-            intrinsicTestDefinition += "    for (int i = 0; i < 1000000; i++)\n"
+            intrinsicTestDefinition += "    for (int iterator = 0; iterator < 1000000; iterator++)\n"
             intrinsicTestDefinition += "    {\n"
             intrinsicTestDefinition += ("        " + callIntrinsic + "\n")
             intrinsicTestDefinition += ("        " + callIntrinsic + "\n")
@@ -87,7 +92,7 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             intrinsicTestDefinition += ("        " + callIntrinsic + "\n")
             intrinsicTestDefinition += "    }\n"
             intrinsicTestDefinition += "    clock_t t2 = clock();\n"
-            intrinsicTestDefinition += "    for (int i = 0; i < 1000000; i++)\n"
+            intrinsicTestDefinition += "    for (int iterator = 0; iterator < 1000000; iterator++)\n"
             intrinsicTestDefinition += "    {\n"
             intrinsicTestDefinition += ("        " + callIntrinsic + "\n")
             intrinsicTestDefinition += ("        " + callIntrinsic + "\n")

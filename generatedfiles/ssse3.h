@@ -13,7 +13,7 @@ void test_mm_abs_epi16 (__m128i a)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi16(a);
         ret = _mm_abs_epi16(a);
@@ -27,7 +27,7 @@ void test_mm_abs_epi16 (__m128i a)
         ret = _mm_abs_epi16(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi16(a);
         ret = _mm_abs_epi16(a);
@@ -58,7 +58,7 @@ void test_mm_abs_epi32 (__m128i a)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi32(a);
         ret = _mm_abs_epi32(a);
@@ -72,7 +72,7 @@ void test_mm_abs_epi32 (__m128i a)
         ret = _mm_abs_epi32(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi32(a);
         ret = _mm_abs_epi32(a);
@@ -103,7 +103,7 @@ void test_mm_abs_epi8 (__m128i a)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi8(a);
         ret = _mm_abs_epi8(a);
@@ -117,7 +117,7 @@ void test_mm_abs_epi8 (__m128i a)
         ret = _mm_abs_epi8(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_epi8(a);
         ret = _mm_abs_epi8(a);
@@ -148,7 +148,7 @@ void test_mm_abs_pi16 (__m64 a)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi16(a);
         ret = _mm_abs_pi16(a);
@@ -162,7 +162,7 @@ void test_mm_abs_pi16 (__m64 a)
         ret = _mm_abs_pi16(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi16(a);
         ret = _mm_abs_pi16(a);
@@ -193,7 +193,7 @@ void test_mm_abs_pi32 (__m64 a)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi32(a);
         ret = _mm_abs_pi32(a);
@@ -207,7 +207,7 @@ void test_mm_abs_pi32 (__m64 a)
         ret = _mm_abs_pi32(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi32(a);
         ret = _mm_abs_pi32(a);
@@ -238,7 +238,7 @@ void test_mm_abs_pi8 (__m64 a)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi8(a);
         ret = _mm_abs_pi8(a);
@@ -252,7 +252,7 @@ void test_mm_abs_pi8 (__m64 a)
         ret = _mm_abs_pi8(a);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_abs_pi8(a);
         ret = _mm_abs_pi8(a);
@@ -283,7 +283,7 @@ void test_mm_alignr_epi8 (__m128i a, __m128i b, int count)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_alignr_epi8(a,b,count);
         ret = _mm_alignr_epi8(a,b,count);
@@ -297,7 +297,7 @@ void test_mm_alignr_epi8 (__m128i a, __m128i b, int count)
         ret = _mm_alignr_epi8(a,b,count);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_alignr_epi8(a,b,count);
         ret = _mm_alignr_epi8(a,b,count);
@@ -328,7 +328,7 @@ void test_mm_alignr_pi8 (__m64 a, __m64 b, int count)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_alignr_pi8(a,b,count);
         ret = _mm_alignr_pi8(a,b,count);
@@ -342,7 +342,7 @@ void test_mm_alignr_pi8 (__m64 a, __m64 b, int count)
         ret = _mm_alignr_pi8(a,b,count);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_alignr_pi8(a,b,count);
         ret = _mm_alignr_pi8(a,b,count);
@@ -373,7 +373,7 @@ void test_mm_hadd_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_epi16(a,b);
         ret = _mm_hadd_epi16(a,b);
@@ -387,7 +387,7 @@ void test_mm_hadd_epi16 (__m128i a, __m128i b)
         ret = _mm_hadd_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_epi16(a,b);
         ret = _mm_hadd_epi16(a,b);
@@ -418,7 +418,7 @@ void test_mm_hadd_epi32 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_epi32(a,b);
         ret = _mm_hadd_epi32(a,b);
@@ -432,7 +432,7 @@ void test_mm_hadd_epi32 (__m128i a, __m128i b)
         ret = _mm_hadd_epi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_epi32(a,b);
         ret = _mm_hadd_epi32(a,b);
@@ -463,7 +463,7 @@ void test_mm_hadd_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_pi16(a,b);
         ret = _mm_hadd_pi16(a,b);
@@ -477,7 +477,7 @@ void test_mm_hadd_pi16 (__m64 a, __m64 b)
         ret = _mm_hadd_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_pi16(a,b);
         ret = _mm_hadd_pi16(a,b);
@@ -508,7 +508,7 @@ void test_mm_hadd_pi32 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_pi32(a,b);
         ret = _mm_hadd_pi32(a,b);
@@ -522,7 +522,7 @@ void test_mm_hadd_pi32 (__m64 a, __m64 b)
         ret = _mm_hadd_pi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadd_pi32(a,b);
         ret = _mm_hadd_pi32(a,b);
@@ -553,7 +553,7 @@ void test_mm_hadds_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadds_epi16(a,b);
         ret = _mm_hadds_epi16(a,b);
@@ -567,7 +567,7 @@ void test_mm_hadds_epi16 (__m128i a, __m128i b)
         ret = _mm_hadds_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadds_epi16(a,b);
         ret = _mm_hadds_epi16(a,b);
@@ -598,7 +598,7 @@ void test_mm_hadds_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadds_pi16(a,b);
         ret = _mm_hadds_pi16(a,b);
@@ -612,7 +612,7 @@ void test_mm_hadds_pi16 (__m64 a, __m64 b)
         ret = _mm_hadds_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hadds_pi16(a,b);
         ret = _mm_hadds_pi16(a,b);
@@ -643,7 +643,7 @@ void test_mm_hsub_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_epi16(a,b);
         ret = _mm_hsub_epi16(a,b);
@@ -657,7 +657,7 @@ void test_mm_hsub_epi16 (__m128i a, __m128i b)
         ret = _mm_hsub_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_epi16(a,b);
         ret = _mm_hsub_epi16(a,b);
@@ -688,7 +688,7 @@ void test_mm_hsub_epi32 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_epi32(a,b);
         ret = _mm_hsub_epi32(a,b);
@@ -702,7 +702,7 @@ void test_mm_hsub_epi32 (__m128i a, __m128i b)
         ret = _mm_hsub_epi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_epi32(a,b);
         ret = _mm_hsub_epi32(a,b);
@@ -733,7 +733,7 @@ void test_mm_hsub_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_pi16(a,b);
         ret = _mm_hsub_pi16(a,b);
@@ -747,7 +747,7 @@ void test_mm_hsub_pi16 (__m64 a, __m64 b)
         ret = _mm_hsub_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_pi16(a,b);
         ret = _mm_hsub_pi16(a,b);
@@ -778,7 +778,7 @@ void test_mm_hsub_pi32 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_pi32(a,b);
         ret = _mm_hsub_pi32(a,b);
@@ -792,7 +792,7 @@ void test_mm_hsub_pi32 (__m64 a, __m64 b)
         ret = _mm_hsub_pi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsub_pi32(a,b);
         ret = _mm_hsub_pi32(a,b);
@@ -823,7 +823,7 @@ void test_mm_hsubs_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsubs_epi16(a,b);
         ret = _mm_hsubs_epi16(a,b);
@@ -837,7 +837,7 @@ void test_mm_hsubs_epi16 (__m128i a, __m128i b)
         ret = _mm_hsubs_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsubs_epi16(a,b);
         ret = _mm_hsubs_epi16(a,b);
@@ -868,7 +868,7 @@ void test_mm_hsubs_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsubs_pi16(a,b);
         ret = _mm_hsubs_pi16(a,b);
@@ -882,7 +882,7 @@ void test_mm_hsubs_pi16 (__m64 a, __m64 b)
         ret = _mm_hsubs_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_hsubs_pi16(a,b);
         ret = _mm_hsubs_pi16(a,b);
@@ -913,7 +913,7 @@ void test_mm_maddubs_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_maddubs_epi16(a,b);
         ret = _mm_maddubs_epi16(a,b);
@@ -927,7 +927,7 @@ void test_mm_maddubs_epi16 (__m128i a, __m128i b)
         ret = _mm_maddubs_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_maddubs_epi16(a,b);
         ret = _mm_maddubs_epi16(a,b);
@@ -958,7 +958,7 @@ void test_mm_maddubs_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_maddubs_pi16(a,b);
         ret = _mm_maddubs_pi16(a,b);
@@ -972,7 +972,7 @@ void test_mm_maddubs_pi16 (__m64 a, __m64 b)
         ret = _mm_maddubs_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_maddubs_pi16(a,b);
         ret = _mm_maddubs_pi16(a,b);
@@ -1003,7 +1003,7 @@ void test_mm_mulhrs_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_mulhrs_epi16(a,b);
         ret = _mm_mulhrs_epi16(a,b);
@@ -1017,7 +1017,7 @@ void test_mm_mulhrs_epi16 (__m128i a, __m128i b)
         ret = _mm_mulhrs_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_mulhrs_epi16(a,b);
         ret = _mm_mulhrs_epi16(a,b);
@@ -1048,7 +1048,7 @@ void test_mm_mulhrs_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_mulhrs_pi16(a,b);
         ret = _mm_mulhrs_pi16(a,b);
@@ -1062,7 +1062,7 @@ void test_mm_mulhrs_pi16 (__m64 a, __m64 b)
         ret = _mm_mulhrs_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_mulhrs_pi16(a,b);
         ret = _mm_mulhrs_pi16(a,b);
@@ -1093,7 +1093,7 @@ void test_mm_shuffle_epi8 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_shuffle_epi8(a,b);
         ret = _mm_shuffle_epi8(a,b);
@@ -1107,7 +1107,7 @@ void test_mm_shuffle_epi8 (__m128i a, __m128i b)
         ret = _mm_shuffle_epi8(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_shuffle_epi8(a,b);
         ret = _mm_shuffle_epi8(a,b);
@@ -1138,7 +1138,7 @@ void test_mm_shuffle_pi8 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_shuffle_pi8(a,b);
         ret = _mm_shuffle_pi8(a,b);
@@ -1152,7 +1152,7 @@ void test_mm_shuffle_pi8 (__m64 a, __m64 b)
         ret = _mm_shuffle_pi8(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_shuffle_pi8(a,b);
         ret = _mm_shuffle_pi8(a,b);
@@ -1183,7 +1183,7 @@ void test_mm_sign_epi16 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi16(a,b);
         ret = _mm_sign_epi16(a,b);
@@ -1197,7 +1197,7 @@ void test_mm_sign_epi16 (__m128i a, __m128i b)
         ret = _mm_sign_epi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi16(a,b);
         ret = _mm_sign_epi16(a,b);
@@ -1228,7 +1228,7 @@ void test_mm_sign_epi32 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi32(a,b);
         ret = _mm_sign_epi32(a,b);
@@ -1242,7 +1242,7 @@ void test_mm_sign_epi32 (__m128i a, __m128i b)
         ret = _mm_sign_epi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi32(a,b);
         ret = _mm_sign_epi32(a,b);
@@ -1273,7 +1273,7 @@ void test_mm_sign_epi8 (__m128i a, __m128i b)
 {
     __m128i ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi8(a,b);
         ret = _mm_sign_epi8(a,b);
@@ -1287,7 +1287,7 @@ void test_mm_sign_epi8 (__m128i a, __m128i b)
         ret = _mm_sign_epi8(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_epi8(a,b);
         ret = _mm_sign_epi8(a,b);
@@ -1318,7 +1318,7 @@ void test_mm_sign_pi16 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi16(a,b);
         ret = _mm_sign_pi16(a,b);
@@ -1332,7 +1332,7 @@ void test_mm_sign_pi16 (__m64 a, __m64 b)
         ret = _mm_sign_pi16(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi16(a,b);
         ret = _mm_sign_pi16(a,b);
@@ -1363,7 +1363,7 @@ void test_mm_sign_pi32 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi32(a,b);
         ret = _mm_sign_pi32(a,b);
@@ -1377,7 +1377,7 @@ void test_mm_sign_pi32 (__m64 a, __m64 b)
         ret = _mm_sign_pi32(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi32(a,b);
         ret = _mm_sign_pi32(a,b);
@@ -1408,7 +1408,7 @@ void test_mm_sign_pi8 (__m64 a, __m64 b)
 {
     __m64 ret;
     clock_t t1 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi8(a,b);
         ret = _mm_sign_pi8(a,b);
@@ -1422,7 +1422,7 @@ void test_mm_sign_pi8 (__m64 a, __m64 b)
         ret = _mm_sign_pi8(a,b);
     }
     clock_t t2 = clock();
-    for (int i = 0; i < 1000000; i++)
+    for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_sign_pi8(a,b);
         ret = _mm_sign_pi8(a,b);
