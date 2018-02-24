@@ -283,6 +283,7 @@ void test_mm_lddqu_si128 (__m128i const* mem_addr)
 {
     __m128i ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_lddqu_si128(mem_addr);
@@ -296,7 +297,9 @@ void test_mm_lddqu_si128 (__m128i const* mem_addr)
         ret = _mm_lddqu_si128(mem_addr);
         ret = _mm_lddqu_si128(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_lddqu_si128(mem_addr);
@@ -320,6 +323,7 @@ void test_mm_lddqu_si128 (__m128i const* mem_addr)
         ret = _mm_lddqu_si128(mem_addr);
         ret = _mm_lddqu_si128(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_lddqu_si128 takes "<< clk << std::endl;
@@ -328,6 +332,7 @@ void test_mm_loaddup_pd (double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loaddup_pd(mem_addr);
@@ -341,7 +346,9 @@ void test_mm_loaddup_pd (double const* mem_addr)
         ret = _mm_loaddup_pd(mem_addr);
         ret = _mm_loaddup_pd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loaddup_pd(mem_addr);
@@ -365,6 +372,7 @@ void test_mm_loaddup_pd (double const* mem_addr)
         ret = _mm_loaddup_pd(mem_addr);
         ret = _mm_loaddup_pd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loaddup_pd takes "<< clk << std::endl;

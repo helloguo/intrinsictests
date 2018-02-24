@@ -3383,96 +3383,6 @@ void test_mm_cvtsd_si32 (__m128d a)
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_cvtsd_si32 takes "<< clk << std::endl;
 }
-void test_mm_cvtsd_si64 (__m128d a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-        ret = _mm_cvtsd_si64(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsd_si64 takes "<< clk << std::endl;
-}
-void test_mm_cvtsd_si64x (__m128d a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-        ret = _mm_cvtsd_si64x(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsd_si64x takes "<< clk << std::endl;
-}
 void test_mm_cvtsd_ss (__m128 a, __m128d b) 
 {
     __m128 ret;
@@ -3563,96 +3473,6 @@ void test_mm_cvtsi128_si32 (__m128i a)
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_cvtsi128_si32 takes "<< clk << std::endl;
 }
-void test_mm_cvtsi128_si64 (__m128i a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-        ret = _mm_cvtsi128_si64(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi128_si64 takes "<< clk << std::endl;
-}
-void test_mm_cvtsi128_si64x (__m128i a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-        ret = _mm_cvtsi128_si64x(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi128_si64x takes "<< clk << std::endl;
-}
 void test_mm_cvtsi32_sd (__m128d a, int b) 
 {
     __m128d ret;
@@ -3742,186 +3562,6 @@ void test_mm_cvtsi32_si128 (int a)
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_cvtsi32_si128 takes "<< clk << std::endl;
-}
-void test_mm_cvtsi64_sd (__m128d a, __int64 b) 
-{
-    __m128d ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-        ret = _mm_cvtsi64_sd(a,b);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi64_sd takes "<< clk << std::endl;
-}
-void test_mm_cvtsi64_si128 (__int64 a) 
-{
-    __m128i ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-        ret = _mm_cvtsi64_si128(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi64_si128 takes "<< clk << std::endl;
-}
-void test_mm_cvtsi64x_sd (__m128d a, __int64 b) 
-{
-    __m128d ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-        ret = _mm_cvtsi64x_sd(a,b);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi64x_sd takes "<< clk << std::endl;
-}
-void test_mm_cvtsi64x_si128 (__int64 a) 
-{
-    __m128i ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-        ret = _mm_cvtsi64x_si128(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvtsi64x_si128 takes "<< clk << std::endl;
 }
 void test_mm_cvtss_sd (__m128d a, __m128 b) 
 {
@@ -4148,96 +3788,6 @@ void test_mm_cvttsd_si32 (__m128d a)
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_cvttsd_si32 takes "<< clk << std::endl;
 }
-void test_mm_cvttsd_si64 (__m128d a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-        ret = _mm_cvttsd_si64(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvttsd_si64 takes "<< clk << std::endl;
-}
-void test_mm_cvttsd_si64x (__m128d a) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-        ret = _mm_cvttsd_si64x(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_cvttsd_si64x takes "<< clk << std::endl;
-}
 void test_mm_div_pd (__m128d a, __m128d b) 
 {
     __m128d ret;
@@ -4379,40 +3929,40 @@ void test_mm_insert_epi16 (__m128i a, int i, int imm8)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
-        ret = _mm_insert_epi16(a,i,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
+        ret = _mm_insert_epi16(a,1,1);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -4422,6 +3972,7 @@ void test_mm_load_pd (double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_pd(mem_addr);
@@ -4435,7 +3986,9 @@ void test_mm_load_pd (double const* mem_addr)
         ret = _mm_load_pd(mem_addr);
         ret = _mm_load_pd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_pd(mem_addr);
@@ -4459,59 +4012,16 @@ void test_mm_load_pd (double const* mem_addr)
         ret = _mm_load_pd(mem_addr);
         ret = _mm_load_pd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_load_pd takes "<< clk << std::endl;
-}
-void test_mm_load_pd1 (double const* mem_addr) 
-{
-    __m128d ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-        ret = _mm_load_pd1(mem_addr);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_load_pd1 takes "<< clk << std::endl;
 }
 void test_mm_load_sd (double const* mem_addr) 
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_sd(mem_addr);
@@ -4525,7 +4035,9 @@ void test_mm_load_sd (double const* mem_addr)
         ret = _mm_load_sd(mem_addr);
         ret = _mm_load_sd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_sd(mem_addr);
@@ -4549,6 +4061,7 @@ void test_mm_load_sd (double const* mem_addr)
         ret = _mm_load_sd(mem_addr);
         ret = _mm_load_sd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_load_sd takes "<< clk << std::endl;
@@ -4557,6 +4070,7 @@ void test_mm_load_si128 (__m128i const* mem_addr)
 {
     __m128i ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_si128(mem_addr);
@@ -4570,7 +4084,9 @@ void test_mm_load_si128 (__m128i const* mem_addr)
         ret = _mm_load_si128(mem_addr);
         ret = _mm_load_si128(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load_si128(mem_addr);
@@ -4594,6 +4110,7 @@ void test_mm_load_si128 (__m128i const* mem_addr)
         ret = _mm_load_si128(mem_addr);
         ret = _mm_load_si128(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_load_si128 takes "<< clk << std::endl;
@@ -4602,6 +4119,7 @@ void test_mm_load1_pd (double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load1_pd(mem_addr);
@@ -4615,7 +4133,9 @@ void test_mm_load1_pd (double const* mem_addr)
         ret = _mm_load1_pd(mem_addr);
         ret = _mm_load1_pd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_load1_pd(mem_addr);
@@ -4639,6 +4159,7 @@ void test_mm_load1_pd (double const* mem_addr)
         ret = _mm_load1_pd(mem_addr);
         ret = _mm_load1_pd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_load1_pd takes "<< clk << std::endl;
@@ -4647,6 +4168,7 @@ void test_mm_loadh_pd (__m128d a, double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadh_pd(a,mem_addr);
@@ -4660,7 +4182,9 @@ void test_mm_loadh_pd (__m128d a, double const* mem_addr)
         ret = _mm_loadh_pd(a,mem_addr);
         ret = _mm_loadh_pd(a,mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadh_pd(a,mem_addr);
@@ -4684,6 +4208,7 @@ void test_mm_loadh_pd (__m128d a, double const* mem_addr)
         ret = _mm_loadh_pd(a,mem_addr);
         ret = _mm_loadh_pd(a,mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadh_pd takes "<< clk << std::endl;
@@ -4692,6 +4217,7 @@ void test_mm_loadl_epi64 (__m128i const* mem_addr)
 {
     __m128i ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadl_epi64(mem_addr);
@@ -4705,7 +4231,9 @@ void test_mm_loadl_epi64 (__m128i const* mem_addr)
         ret = _mm_loadl_epi64(mem_addr);
         ret = _mm_loadl_epi64(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadl_epi64(mem_addr);
@@ -4729,6 +4257,7 @@ void test_mm_loadl_epi64 (__m128i const* mem_addr)
         ret = _mm_loadl_epi64(mem_addr);
         ret = _mm_loadl_epi64(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadl_epi64 takes "<< clk << std::endl;
@@ -4737,6 +4266,7 @@ void test_mm_loadl_pd (__m128d a, double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadl_pd(a,mem_addr);
@@ -4750,7 +4280,9 @@ void test_mm_loadl_pd (__m128d a, double const* mem_addr)
         ret = _mm_loadl_pd(a,mem_addr);
         ret = _mm_loadl_pd(a,mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadl_pd(a,mem_addr);
@@ -4774,6 +4306,7 @@ void test_mm_loadl_pd (__m128d a, double const* mem_addr)
         ret = _mm_loadl_pd(a,mem_addr);
         ret = _mm_loadl_pd(a,mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadl_pd takes "<< clk << std::endl;
@@ -4782,6 +4315,7 @@ void test_mm_loadr_pd (double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadr_pd(mem_addr);
@@ -4795,7 +4329,9 @@ void test_mm_loadr_pd (double const* mem_addr)
         ret = _mm_loadr_pd(mem_addr);
         ret = _mm_loadr_pd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadr_pd(mem_addr);
@@ -4819,6 +4355,7 @@ void test_mm_loadr_pd (double const* mem_addr)
         ret = _mm_loadr_pd(mem_addr);
         ret = _mm_loadr_pd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadr_pd takes "<< clk << std::endl;
@@ -4827,6 +4364,7 @@ void test_mm_loadu_pd (double const* mem_addr)
 {
     __m128d ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadu_pd(mem_addr);
@@ -4840,7 +4378,9 @@ void test_mm_loadu_pd (double const* mem_addr)
         ret = _mm_loadu_pd(mem_addr);
         ret = _mm_loadu_pd(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadu_pd(mem_addr);
@@ -4864,6 +4404,7 @@ void test_mm_loadu_pd (double const* mem_addr)
         ret = _mm_loadu_pd(mem_addr);
         ret = _mm_loadu_pd(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadu_pd takes "<< clk << std::endl;
@@ -4872,6 +4413,7 @@ void test_mm_loadu_si128 (__m128i const* mem_addr)
 {
     __m128i ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadu_si128(mem_addr);
@@ -4885,7 +4427,9 @@ void test_mm_loadu_si128 (__m128i const* mem_addr)
         ret = _mm_loadu_si128(mem_addr);
         ret = _mm_loadu_si128(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_loadu_si128(mem_addr);
@@ -4909,6 +4453,7 @@ void test_mm_loadu_si128 (__m128i const* mem_addr)
         ret = _mm_loadu_si128(mem_addr);
         ret = _mm_loadu_si128(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_loadu_si128 takes "<< clk << std::endl;
@@ -4961,6 +4506,7 @@ void test_mm_madd_epi16 (__m128i a, __m128i b)
 void test_mm_maskmoveu_si128 (__m128i a, __m128i mask, char* mem_addr) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_maskmoveu_si128(a,mask,mem_addr);
@@ -4974,7 +4520,9 @@ void test_mm_maskmoveu_si128 (__m128i a, __m128i mask, char* mem_addr)
         _mm_maskmoveu_si128(a,mask,mem_addr);
         _mm_maskmoveu_si128(a,mask,mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_maskmoveu_si128(a,mask,mem_addr);
@@ -4998,6 +4546,7 @@ void test_mm_maskmoveu_si128 (__m128i a, __m128i mask, char* mem_addr)
         _mm_maskmoveu_si128(a,mask,mem_addr);
         _mm_maskmoveu_si128(a,mask,mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_maskmoveu_si128 takes "<< clk << std::endl;
@@ -6486,51 +6035,6 @@ void test_mm_set_pd (double e1, double e0)
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_set_pd takes "<< clk << std::endl;
-}
-void test_mm_set_pd1 (double a) 
-{
-    __m128d ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-        ret = _mm_set_pd1(a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_set_pd1 takes "<< clk << std::endl;
 }
 void test_mm_set_sd (double a) 
 {
@@ -8155,6 +7659,7 @@ void test_mm_srli_si128 (__m128i a, int imm8)
 void test_mm_store_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_pd(mem_addr,a);
@@ -8168,7 +7673,9 @@ void test_mm_store_pd (double* mem_addr, __m128d a)
         _mm_store_pd(mem_addr,a);
         _mm_store_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_pd(mem_addr,a);
@@ -8192,57 +7699,15 @@ void test_mm_store_pd (double* mem_addr, __m128d a)
         _mm_store_pd(mem_addr,a);
         _mm_store_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_store_pd takes "<< clk << std::endl;
 }
-void test_mm_store_pd1 (double* mem_addr, __m128d a) 
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-        _mm_store_pd1(mem_addr,a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_store_pd1 takes "<< clk << std::endl;
-}
 void test_mm_store_sd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_sd(mem_addr,a);
@@ -8256,7 +7721,9 @@ void test_mm_store_sd (double* mem_addr, __m128d a)
         _mm_store_sd(mem_addr,a);
         _mm_store_sd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_sd(mem_addr,a);
@@ -8280,6 +7747,7 @@ void test_mm_store_sd (double* mem_addr, __m128d a)
         _mm_store_sd(mem_addr,a);
         _mm_store_sd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_store_sd takes "<< clk << std::endl;
@@ -8287,6 +7755,7 @@ void test_mm_store_sd (double* mem_addr, __m128d a)
 void test_mm_store_si128 (__m128i* mem_addr, __m128i a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_si128(mem_addr,a);
@@ -8300,7 +7769,9 @@ void test_mm_store_si128 (__m128i* mem_addr, __m128i a)
         _mm_store_si128(mem_addr,a);
         _mm_store_si128(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store_si128(mem_addr,a);
@@ -8324,6 +7795,7 @@ void test_mm_store_si128 (__m128i* mem_addr, __m128i a)
         _mm_store_si128(mem_addr,a);
         _mm_store_si128(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_store_si128 takes "<< clk << std::endl;
@@ -8331,6 +7803,7 @@ void test_mm_store_si128 (__m128i* mem_addr, __m128i a)
 void test_mm_store1_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store1_pd(mem_addr,a);
@@ -8344,7 +7817,9 @@ void test_mm_store1_pd (double* mem_addr, __m128d a)
         _mm_store1_pd(mem_addr,a);
         _mm_store1_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_store1_pd(mem_addr,a);
@@ -8368,6 +7843,7 @@ void test_mm_store1_pd (double* mem_addr, __m128d a)
         _mm_store1_pd(mem_addr,a);
         _mm_store1_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_store1_pd takes "<< clk << std::endl;
@@ -8375,6 +7851,7 @@ void test_mm_store1_pd (double* mem_addr, __m128d a)
 void test_mm_storeh_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeh_pd(mem_addr,a);
@@ -8388,7 +7865,9 @@ void test_mm_storeh_pd (double* mem_addr, __m128d a)
         _mm_storeh_pd(mem_addr,a);
         _mm_storeh_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeh_pd(mem_addr,a);
@@ -8412,6 +7891,7 @@ void test_mm_storeh_pd (double* mem_addr, __m128d a)
         _mm_storeh_pd(mem_addr,a);
         _mm_storeh_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storeh_pd takes "<< clk << std::endl;
@@ -8419,6 +7899,7 @@ void test_mm_storeh_pd (double* mem_addr, __m128d a)
 void test_mm_storel_epi64 (__m128i* mem_addr, __m128i a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storel_epi64(mem_addr,a);
@@ -8432,7 +7913,9 @@ void test_mm_storel_epi64 (__m128i* mem_addr, __m128i a)
         _mm_storel_epi64(mem_addr,a);
         _mm_storel_epi64(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storel_epi64(mem_addr,a);
@@ -8456,6 +7939,7 @@ void test_mm_storel_epi64 (__m128i* mem_addr, __m128i a)
         _mm_storel_epi64(mem_addr,a);
         _mm_storel_epi64(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storel_epi64 takes "<< clk << std::endl;
@@ -8463,6 +7947,7 @@ void test_mm_storel_epi64 (__m128i* mem_addr, __m128i a)
 void test_mm_storel_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storel_pd(mem_addr,a);
@@ -8476,7 +7961,9 @@ void test_mm_storel_pd (double* mem_addr, __m128d a)
         _mm_storel_pd(mem_addr,a);
         _mm_storel_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storel_pd(mem_addr,a);
@@ -8500,6 +7987,7 @@ void test_mm_storel_pd (double* mem_addr, __m128d a)
         _mm_storel_pd(mem_addr,a);
         _mm_storel_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storel_pd takes "<< clk << std::endl;
@@ -8507,6 +7995,7 @@ void test_mm_storel_pd (double* mem_addr, __m128d a)
 void test_mm_storer_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storer_pd(mem_addr,a);
@@ -8520,7 +8009,9 @@ void test_mm_storer_pd (double* mem_addr, __m128d a)
         _mm_storer_pd(mem_addr,a);
         _mm_storer_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storer_pd(mem_addr,a);
@@ -8544,6 +8035,7 @@ void test_mm_storer_pd (double* mem_addr, __m128d a)
         _mm_storer_pd(mem_addr,a);
         _mm_storer_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storer_pd takes "<< clk << std::endl;
@@ -8551,6 +8043,7 @@ void test_mm_storer_pd (double* mem_addr, __m128d a)
 void test_mm_storeu_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeu_pd(mem_addr,a);
@@ -8564,7 +8057,9 @@ void test_mm_storeu_pd (double* mem_addr, __m128d a)
         _mm_storeu_pd(mem_addr,a);
         _mm_storeu_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeu_pd(mem_addr,a);
@@ -8588,6 +8083,7 @@ void test_mm_storeu_pd (double* mem_addr, __m128d a)
         _mm_storeu_pd(mem_addr,a);
         _mm_storeu_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storeu_pd takes "<< clk << std::endl;
@@ -8595,6 +8091,7 @@ void test_mm_storeu_pd (double* mem_addr, __m128d a)
 void test_mm_storeu_si128 (__m128i* mem_addr, __m128i a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeu_si128(mem_addr,a);
@@ -8608,7 +8105,9 @@ void test_mm_storeu_si128 (__m128i* mem_addr, __m128i a)
         _mm_storeu_si128(mem_addr,a);
         _mm_storeu_si128(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_storeu_si128(mem_addr,a);
@@ -8632,6 +8131,7 @@ void test_mm_storeu_si128 (__m128i* mem_addr, __m128i a)
         _mm_storeu_si128(mem_addr,a);
         _mm_storeu_si128(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_storeu_si128 takes "<< clk << std::endl;
@@ -8639,6 +8139,7 @@ void test_mm_storeu_si128 (__m128i* mem_addr, __m128i a)
 void test_mm_stream_pd (double* mem_addr, __m128d a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_pd(mem_addr,a);
@@ -8652,7 +8153,9 @@ void test_mm_stream_pd (double* mem_addr, __m128d a)
         _mm_stream_pd(mem_addr,a);
         _mm_stream_pd(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_pd(mem_addr,a);
@@ -8676,6 +8179,7 @@ void test_mm_stream_pd (double* mem_addr, __m128d a)
         _mm_stream_pd(mem_addr,a);
         _mm_stream_pd(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_stream_pd takes "<< clk << std::endl;
@@ -8683,6 +8187,7 @@ void test_mm_stream_pd (double* mem_addr, __m128d a)
 void test_mm_stream_si128 (__m128i* mem_addr, __m128i a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_si128(mem_addr,a);
@@ -8696,7 +8201,9 @@ void test_mm_stream_si128 (__m128i* mem_addr, __m128i a)
         _mm_stream_si128(mem_addr,a);
         _mm_stream_si128(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_si128(mem_addr,a);
@@ -8720,6 +8227,7 @@ void test_mm_stream_si128 (__m128i* mem_addr, __m128i a)
         _mm_stream_si128(mem_addr,a);
         _mm_stream_si128(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_stream_si128 takes "<< clk << std::endl;
@@ -8727,6 +8235,7 @@ void test_mm_stream_si128 (__m128i* mem_addr, __m128i a)
 void test_mm_stream_si32 (int* mem_addr, int a) 
 {
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_si32(mem_addr,a);
@@ -8740,7 +8249,9 @@ void test_mm_stream_si32 (int* mem_addr, int a)
         _mm_stream_si32(mem_addr,a);
         _mm_stream_si32(mem_addr,a);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         _mm_stream_si32(mem_addr,a);
@@ -8764,53 +8275,10 @@ void test_mm_stream_si32 (int* mem_addr, int a)
         _mm_stream_si32(mem_addr,a);
         _mm_stream_si32(mem_addr,a);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_stream_si32 takes "<< clk << std::endl;
-}
-void test_mm_stream_si64 (__int64* mem_addr, __int64 a) 
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-        _mm_stream_si64(mem_addr,a);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_stream_si64 takes "<< clk << std::endl;
 }
 void test_mm_sub_epi16 (__m128i a, __m128i b) 
 {

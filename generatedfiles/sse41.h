@@ -1179,51 +1179,6 @@ void test_mm_extract_epi32 (__m128i a, const int imm8)
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_extract_epi32 takes "<< clk << std::endl;
 }
-void test_mm_extract_epi64 (__m128i a, const int imm8) 
-{
-    __int64 ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-        ret = _mm_extract_epi64(a,1);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_extract_epi64 takes "<< clk << std::endl;
-}
 void test_mm_extract_epi8 (__m128i a, const int imm8) 
 {
     int ret;
@@ -1500,89 +1455,44 @@ void test_mm_insert_epi32 (__m128i a, int i, const int imm8)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
-        ret = _mm_insert_epi32(a,i,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
+        ret = _mm_insert_epi32(a,1,1);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_insert_epi32 takes "<< clk << std::endl;
-}
-void test_mm_insert_epi64 (__m128i a, __int64 i, const int imm8) 
-{
-    __m128i ret;
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-        ret = _mm_insert_epi64(a,i,1);
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "_mm_insert_epi64 takes "<< clk << std::endl;
 }
 void test_mm_insert_epi8 (__m128i a, int i, const int imm8) 
 {
@@ -1590,40 +1500,40 @@ void test_mm_insert_epi8 (__m128i a, int i, const int imm8)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
-        ret = _mm_insert_epi8(a,i,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
+        ret = _mm_insert_epi8(a,1,1);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -2265,40 +2175,40 @@ void test_mm_round_pd (__m128d a, int rounding)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
-        ret = _mm_round_pd(a,rounding);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
+        ret = _mm_round_pd(a,0);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -2310,40 +2220,40 @@ void test_mm_round_ps (__m128 a, int rounding)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
-        ret = _mm_round_ps(a,rounding);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
+        ret = _mm_round_ps(a,0);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -2355,40 +2265,40 @@ void test_mm_round_sd (__m128d a, __m128d b, int rounding)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
-        ret = _mm_round_sd(a,b,rounding);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
+        ret = _mm_round_sd(a,b,0);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -2400,40 +2310,40 @@ void test_mm_round_ss (__m128 a, __m128 b, int rounding)
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
-        ret = _mm_round_ss(a,b,rounding);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
+        ret = _mm_round_ss(a,b,0);
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -2443,6 +2353,7 @@ void test_mm_stream_load_si128 (const __m128i* mem_addr)
 {
     __m128i ret;
     clock_t t1 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_stream_load_si128(mem_addr);
@@ -2456,7 +2367,9 @@ void test_mm_stream_load_si128 (const __m128i* mem_addr)
         ret = _mm_stream_load_si128(mem_addr);
         ret = _mm_stream_load_si128(mem_addr);
     }
+    */
     clock_t t2 = clock();
+    /*
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
         ret = _mm_stream_load_si128(mem_addr);
@@ -2480,6 +2393,7 @@ void test_mm_stream_load_si128 (const __m128i* mem_addr)
         ret = _mm_stream_load_si128(mem_addr);
         ret = _mm_stream_load_si128(mem_addr);
     }
+    */
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "_mm_stream_load_si128 takes "<< clk << std::endl;
