@@ -19,12 +19,15 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
     intrinsicDefFile = intrinsicListsDirectory + "/" + intrinsicLevel + ".txt"
 
     contents = "// This file is generated from testsgenerator.py\n"
-    contents += "// The first loop runs the intrinsic for 1000000 * 10 times. Assume it takes time1\n"
-    contents += "// The second loop runs the intrinsic for 1000000 * 20 times. Assume it takes time2\n"
-    contents += "// The return value is the execution time for 1000000 * 10 times, which equals (time2 - time1)\n"
+    contents += "// The first loop runs the intrinsic for 1000000 * 5 times. Assume it takes time1\n"
+    contents += "// The second loop runs the intrinsic for 1000000 * 105 times. Assume it takes time2\n"
+    contents += "// The return value is the execution time for 1000000 * 100 times, which equals (time2 - time1)\n"
     contents += "#include <time.h>\n"
     contents += "#include <iostream>\n"
 
+    runAllTests = "void run_all_" + intrinsicLevel + "_tests()\n"
+    runAllTests += "{\n"
+    
     with open(intrinsicDefFile,'r') as f:
         for line in f:
             if line.startswith('#'):
@@ -44,7 +47,7 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             func1 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_10_times()\n"
             func1 += "{\n"
             func1 += "    __asm {\n"
-            for i in range(0, 10):
+            for i in range(0, 5):
                 func1 += ("        " + line)
             func1 += "    };\n"
             func1 += "}\n"
@@ -52,7 +55,7 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             func2 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_20_times()\n"
             func2 += "{\n"
             func2 += "    __asm {\n"
-            for i in range(0, 20):
+            for i in range(0, 105):
                 func2 += ("        " + line)
             func2 += "    };\n"
             func2 += "}\n"
@@ -78,7 +81,10 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
             intrinsicTestDefinition += ("    std::cout << \"" + instOpcode + " takes \"<< clk << std::endl;\n") 
             intrinsicTestDefinition += "}\n"
             contents += intrinsicTestDefinition
+            runAllTests += "    test_" + instOpcode + "_" + parameters + "();\n"
     
+    runAllTests += "}\n"
+    contents += runAllTests
     headerFileName = generatedFilesDirectory + "/" + intrinsicLevel + ".h"
     with open(headerFileName,'w') as f:
         f.write(contents)

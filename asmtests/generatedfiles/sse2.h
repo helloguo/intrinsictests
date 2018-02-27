@@ -1,7 +1,7 @@
 // This file is generated from testsgenerator.py
-// The first loop runs the intrinsic for 1000000 * 10 times. Assume it takes time1
-// The second loop runs the intrinsic for 1000000 * 20 times. Assume it takes time2
-// The return value is the execution time for 1000000 * 10 times, which equals (time2 - time1)
+// The first loop runs the intrinsic for 1000000 * 5 times. Assume it takes time1
+// The second loop runs the intrinsic for 1000000 * 105 times. Assume it takes time2
+// The return value is the execution time for 1000000 * 100 times, which equals (time2 - time1)
 #include <time.h>
 #include <iostream>
 
@@ -13,16 +13,96 @@ void __declspec(noinline) __cdecl run_cvtps2dq_xmm1xmm2_10_times()
         cvtps2dq xmm1, xmm2
         cvtps2dq xmm1, xmm2
         cvtps2dq xmm1, xmm2
-        cvtps2dq xmm1, xmm2
-        cvtps2dq xmm1, xmm2
-        cvtps2dq xmm1, xmm2
-        cvtps2dq xmm1, xmm2
-        cvtps2dq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtps2dq_xmm1xmm2_20_times()
 {
     __asm {
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
+        cvtps2dq xmm1, xmm2
         cvtps2dq xmm1, xmm2
         cvtps2dq xmm1, xmm2
         cvtps2dq xmm1, xmm2
@@ -70,16 +150,96 @@ void __declspec(noinline) __cdecl run_cvttps2dq_xmm1xmm2_10_times()
         cvttps2dq xmm1, xmm2
         cvttps2dq xmm1, xmm2
         cvttps2dq xmm1, xmm2
-        cvttps2dq xmm1, xmm2
-        cvttps2dq xmm1, xmm2
-        cvttps2dq xmm1, xmm2
-        cvttps2dq xmm1, xmm2
-        cvttps2dq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvttps2dq_xmm1xmm2_20_times()
 {
     __asm {
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
+        cvttps2dq xmm1, xmm2
         cvttps2dq xmm1, xmm2
         cvttps2dq xmm1, xmm2
         cvttps2dq xmm1, xmm2
@@ -119,71 +279,9 @@ void  test_cvttps2dq_xmm1xmm2()
     std::cout << "cvttps2dq takes "<< clk << std::endl;
 }
 
-void __declspec(noinline) __cdecl run_maskmovdqu_xmm1xmm2_10_times()
-{
-    __asm {
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-    };
-}
-void __declspec(noinline) __cdecl run_maskmovdqu_xmm1xmm2_20_times()
-{
-    __asm {
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-        maskmovdqu xmm1, xmm2
-    };
-}
-void  test_maskmovdqu_xmm1xmm2()
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_maskmovdqu_xmm1xmm2_10_times();
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_maskmovdqu_xmm1xmm2_20_times();
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "maskmovdqu takes "<< clk << std::endl;
-}
-
 void __declspec(noinline) __cdecl run_movd_xmm1eax_10_times()
 {
     __asm {
-        movd xmm1, eax
-        movd xmm1, eax
-        movd xmm1, eax
-        movd xmm1, eax
-        movd xmm1, eax
         movd xmm1, eax
         movd xmm1, eax
         movd xmm1, eax
@@ -194,6 +292,91 @@ void __declspec(noinline) __cdecl run_movd_xmm1eax_10_times()
 void __declspec(noinline) __cdecl run_movd_xmm1eax_20_times()
 {
     __asm {
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
+        movd xmm1, eax
         movd xmm1, eax
         movd xmm1, eax
         movd xmm1, eax
@@ -241,16 +424,96 @@ void __declspec(noinline) __cdecl run_movd_eaxxmm2_10_times()
         movd eax, xmm2
         movd eax, xmm2
         movd eax, xmm2
-        movd eax, xmm2
-        movd eax, xmm2
-        movd eax, xmm2
-        movd eax, xmm2
-        movd eax, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movd_eaxxmm2_20_times()
 {
     __asm {
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
+        movd eax, xmm2
         movd eax, xmm2
         movd eax, xmm2
         movd eax, xmm2
@@ -298,16 +561,96 @@ void __declspec(noinline) __cdecl run_movdqa_xmm1xmm2_10_times()
         movdqa xmm1, xmm2
         movdqa xmm1, xmm2
         movdqa xmm1, xmm2
-        movdqa xmm1, xmm2
-        movdqa xmm1, xmm2
-        movdqa xmm1, xmm2
-        movdqa xmm1, xmm2
-        movdqa xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movdqa_xmm1xmm2_20_times()
 {
     __asm {
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
+        movdqa xmm1, xmm2
         movdqa xmm1, xmm2
         movdqa xmm1, xmm2
         movdqa xmm1, xmm2
@@ -355,16 +698,96 @@ void __declspec(noinline) __cdecl run_movdqu_xmm1xmm2_10_times()
         movdqu xmm1, xmm2
         movdqu xmm1, xmm2
         movdqu xmm1, xmm2
-        movdqu xmm1, xmm2
-        movdqu xmm1, xmm2
-        movdqu xmm1, xmm2
-        movdqu xmm1, xmm2
-        movdqu xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movdqu_xmm1xmm2_20_times()
 {
     __asm {
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
+        movdqu xmm1, xmm2
         movdqu xmm1, xmm2
         movdqu xmm1, xmm2
         movdqu xmm1, xmm2
@@ -412,16 +835,96 @@ void __declspec(noinline) __cdecl run_movq_xmm1xmm2_10_times()
         movq xmm1, xmm2
         movq xmm1, xmm2
         movq xmm1, xmm2
-        movq xmm1, xmm2
-        movq xmm1, xmm2
-        movq xmm1, xmm2
-        movq xmm1, xmm2
-        movq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movq_xmm1xmm2_20_times()
 {
     __asm {
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
+        movq xmm1, xmm2
         movq xmm1, xmm2
         movq xmm1, xmm2
         movq xmm1, xmm2
@@ -469,16 +972,96 @@ void __declspec(noinline) __cdecl run_packsswb_xmm1xmm2_10_times()
         packsswb xmm1, xmm2
         packsswb xmm1, xmm2
         packsswb xmm1, xmm2
-        packsswb xmm1, xmm2
-        packsswb xmm1, xmm2
-        packsswb xmm1, xmm2
-        packsswb xmm1, xmm2
-        packsswb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_packsswb_xmm1xmm2_20_times()
 {
     __asm {
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
+        packsswb xmm1, xmm2
         packsswb xmm1, xmm2
         packsswb xmm1, xmm2
         packsswb xmm1, xmm2
@@ -526,16 +1109,96 @@ void __declspec(noinline) __cdecl run_packssdw_xmm1xmm2_10_times()
         packssdw xmm1, xmm2
         packssdw xmm1, xmm2
         packssdw xmm1, xmm2
-        packssdw xmm1, xmm2
-        packssdw xmm1, xmm2
-        packssdw xmm1, xmm2
-        packssdw xmm1, xmm2
-        packssdw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_packssdw_xmm1xmm2_20_times()
 {
     __asm {
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
+        packssdw xmm1, xmm2
         packssdw xmm1, xmm2
         packssdw xmm1, xmm2
         packssdw xmm1, xmm2
@@ -583,16 +1246,96 @@ void __declspec(noinline) __cdecl run_packuswb_xmm1xmm2_10_times()
         packuswb xmm1, xmm2
         packuswb xmm1, xmm2
         packuswb xmm1, xmm2
-        packuswb xmm1, xmm2
-        packuswb xmm1, xmm2
-        packuswb xmm1, xmm2
-        packuswb xmm1, xmm2
-        packuswb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_packuswb_xmm1xmm2_20_times()
 {
     __asm {
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
+        packuswb xmm1, xmm2
         packuswb xmm1, xmm2
         packuswb xmm1, xmm2
         packuswb xmm1, xmm2
@@ -640,16 +1383,96 @@ void __declspec(noinline) __cdecl run_paddb_xmm1xmm2_10_times()
         paddb xmm1, xmm2
         paddb xmm1, xmm2
         paddb xmm1, xmm2
-        paddb xmm1, xmm2
-        paddb xmm1, xmm2
-        paddb xmm1, xmm2
-        paddb xmm1, xmm2
-        paddb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddb_xmm1xmm2_20_times()
 {
     __asm {
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
+        paddb xmm1, xmm2
         paddb xmm1, xmm2
         paddb xmm1, xmm2
         paddb xmm1, xmm2
@@ -697,16 +1520,96 @@ void __declspec(noinline) __cdecl run_paddw_xmm1xmm2_10_times()
         paddw xmm1, xmm2
         paddw xmm1, xmm2
         paddw xmm1, xmm2
-        paddw xmm1, xmm2
-        paddw xmm1, xmm2
-        paddw xmm1, xmm2
-        paddw xmm1, xmm2
-        paddw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddw_xmm1xmm2_20_times()
 {
     __asm {
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
+        paddw xmm1, xmm2
         paddw xmm1, xmm2
         paddw xmm1, xmm2
         paddw xmm1, xmm2
@@ -754,16 +1657,96 @@ void __declspec(noinline) __cdecl run_paddd_xmm1xmm2_10_times()
         paddd xmm1, xmm2
         paddd xmm1, xmm2
         paddd xmm1, xmm2
-        paddd xmm1, xmm2
-        paddd xmm1, xmm2
-        paddd xmm1, xmm2
-        paddd xmm1, xmm2
-        paddd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddd_xmm1xmm2_20_times()
 {
     __asm {
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
+        paddd xmm1, xmm2
         paddd xmm1, xmm2
         paddd xmm1, xmm2
         paddd xmm1, xmm2
@@ -811,16 +1794,96 @@ void __declspec(noinline) __cdecl run_paddsb_xmm1xmm2_10_times()
         paddsb xmm1, xmm2
         paddsb xmm1, xmm2
         paddsb xmm1, xmm2
-        paddsb xmm1, xmm2
-        paddsb xmm1, xmm2
-        paddsb xmm1, xmm2
-        paddsb xmm1, xmm2
-        paddsb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddsb_xmm1xmm2_20_times()
 {
     __asm {
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
+        paddsb xmm1, xmm2
         paddsb xmm1, xmm2
         paddsb xmm1, xmm2
         paddsb xmm1, xmm2
@@ -868,16 +1931,96 @@ void __declspec(noinline) __cdecl run_paddsw_xmm1xmm2_10_times()
         paddsw xmm1, xmm2
         paddsw xmm1, xmm2
         paddsw xmm1, xmm2
-        paddsw xmm1, xmm2
-        paddsw xmm1, xmm2
-        paddsw xmm1, xmm2
-        paddsw xmm1, xmm2
-        paddsw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddsw_xmm1xmm2_20_times()
 {
     __asm {
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
+        paddsw xmm1, xmm2
         paddsw xmm1, xmm2
         paddsw xmm1, xmm2
         paddsw xmm1, xmm2
@@ -925,16 +2068,96 @@ void __declspec(noinline) __cdecl run_paddusb_xmm1xmm2_10_times()
         paddusb xmm1, xmm2
         paddusb xmm1, xmm2
         paddusb xmm1, xmm2
-        paddusb xmm1, xmm2
-        paddusb xmm1, xmm2
-        paddusb xmm1, xmm2
-        paddusb xmm1, xmm2
-        paddusb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddusb_xmm1xmm2_20_times()
 {
     __asm {
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
+        paddusb xmm1, xmm2
         paddusb xmm1, xmm2
         paddusb xmm1, xmm2
         paddusb xmm1, xmm2
@@ -982,16 +2205,96 @@ void __declspec(noinline) __cdecl run_paddusw_xmm1xmm2_10_times()
         paddusw xmm1, xmm2
         paddusw xmm1, xmm2
         paddusw xmm1, xmm2
-        paddusw xmm1, xmm2
-        paddusw xmm1, xmm2
-        paddusw xmm1, xmm2
-        paddusw xmm1, xmm2
-        paddusw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddusw_xmm1xmm2_20_times()
 {
     __asm {
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
+        paddusw xmm1, xmm2
         paddusw xmm1, xmm2
         paddusw xmm1, xmm2
         paddusw xmm1, xmm2
@@ -1039,16 +2342,96 @@ void __declspec(noinline) __cdecl run_paddq_xmm1xmm2_10_times()
         paddq xmm1, xmm2
         paddq xmm1, xmm2
         paddq xmm1, xmm2
-        paddq xmm1, xmm2
-        paddq xmm1, xmm2
-        paddq xmm1, xmm2
-        paddq xmm1, xmm2
-        paddq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_paddq_xmm1xmm2_20_times()
 {
     __asm {
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
+        paddq xmm1, xmm2
         paddq xmm1, xmm2
         paddq xmm1, xmm2
         paddq xmm1, xmm2
@@ -1096,16 +2479,96 @@ void __declspec(noinline) __cdecl run_psubq_xmm1xmm2_10_times()
         psubq xmm1, xmm2
         psubq xmm1, xmm2
         psubq xmm1, xmm2
-        psubq xmm1, xmm2
-        psubq xmm1, xmm2
-        psubq xmm1, xmm2
-        psubq xmm1, xmm2
-        psubq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubq_xmm1xmm2_20_times()
 {
     __asm {
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
+        psubq xmm1, xmm2
         psubq xmm1, xmm2
         psubq xmm1, xmm2
         psubq xmm1, xmm2
@@ -1153,16 +2616,96 @@ void __declspec(noinline) __cdecl run_pand_xmm1xmm2_10_times()
         pand xmm1, xmm2
         pand xmm1, xmm2
         pand xmm1, xmm2
-        pand xmm1, xmm2
-        pand xmm1, xmm2
-        pand xmm1, xmm2
-        pand xmm1, xmm2
-        pand xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pand_xmm1xmm2_20_times()
 {
     __asm {
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
+        pand xmm1, xmm2
         pand xmm1, xmm2
         pand xmm1, xmm2
         pand xmm1, xmm2
@@ -1210,16 +2753,96 @@ void __declspec(noinline) __cdecl run_pandn_xmm1xmm2_10_times()
         pandn xmm1, xmm2
         pandn xmm1, xmm2
         pandn xmm1, xmm2
-        pandn xmm1, xmm2
-        pandn xmm1, xmm2
-        pandn xmm1, xmm2
-        pandn xmm1, xmm2
-        pandn xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pandn_xmm1xmm2_20_times()
 {
     __asm {
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
+        pandn xmm1, xmm2
         pandn xmm1, xmm2
         pandn xmm1, xmm2
         pandn xmm1, xmm2
@@ -1267,16 +2890,96 @@ void __declspec(noinline) __cdecl run_pavgb_xmm1xmm2_10_times()
         pavgb xmm1, xmm2
         pavgb xmm1, xmm2
         pavgb xmm1, xmm2
-        pavgb xmm1, xmm2
-        pavgb xmm1, xmm2
-        pavgb xmm1, xmm2
-        pavgb xmm1, xmm2
-        pavgb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pavgb_xmm1xmm2_20_times()
 {
     __asm {
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
+        pavgb xmm1, xmm2
         pavgb xmm1, xmm2
         pavgb xmm1, xmm2
         pavgb xmm1, xmm2
@@ -1324,16 +3027,96 @@ void __declspec(noinline) __cdecl run_pavgw_xmm1xmm2_10_times()
         pavgw xmm1, xmm2
         pavgw xmm1, xmm2
         pavgw xmm1, xmm2
-        pavgw xmm1, xmm2
-        pavgw xmm1, xmm2
-        pavgw xmm1, xmm2
-        pavgw xmm1, xmm2
-        pavgw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pavgw_xmm1xmm2_20_times()
 {
     __asm {
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
+        pavgw xmm1, xmm2
         pavgw xmm1, xmm2
         pavgw xmm1, xmm2
         pavgw xmm1, xmm2
@@ -1381,16 +3164,96 @@ void __declspec(noinline) __cdecl run_pcmpeqb_xmm1xmm2_10_times()
         pcmpeqb xmm1, xmm2
         pcmpeqb xmm1, xmm2
         pcmpeqb xmm1, xmm2
-        pcmpeqb xmm1, xmm2
-        pcmpeqb xmm1, xmm2
-        pcmpeqb xmm1, xmm2
-        pcmpeqb xmm1, xmm2
-        pcmpeqb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpeqb_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
+        pcmpeqb xmm1, xmm2
         pcmpeqb xmm1, xmm2
         pcmpeqb xmm1, xmm2
         pcmpeqb xmm1, xmm2
@@ -1438,16 +3301,96 @@ void __declspec(noinline) __cdecl run_pcmpeqd_xmm1xmm2_10_times()
         pcmpeqd xmm1, xmm2
         pcmpeqd xmm1, xmm2
         pcmpeqd xmm1, xmm2
-        pcmpeqd xmm1, xmm2
-        pcmpeqd xmm1, xmm2
-        pcmpeqd xmm1, xmm2
-        pcmpeqd xmm1, xmm2
-        pcmpeqd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpeqd_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
+        pcmpeqd xmm1, xmm2
         pcmpeqd xmm1, xmm2
         pcmpeqd xmm1, xmm2
         pcmpeqd xmm1, xmm2
@@ -1495,16 +3438,96 @@ void __declspec(noinline) __cdecl run_pcmpeqw_xmm1xmm2_10_times()
         pcmpeqw xmm1, xmm2
         pcmpeqw xmm1, xmm2
         pcmpeqw xmm1, xmm2
-        pcmpeqw xmm1, xmm2
-        pcmpeqw xmm1, xmm2
-        pcmpeqw xmm1, xmm2
-        pcmpeqw xmm1, xmm2
-        pcmpeqw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpeqw_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
+        pcmpeqw xmm1, xmm2
         pcmpeqw xmm1, xmm2
         pcmpeqw xmm1, xmm2
         pcmpeqw xmm1, xmm2
@@ -1552,16 +3575,96 @@ void __declspec(noinline) __cdecl run_pcmpgtb_xmm1xmm2_10_times()
         pcmpgtb xmm1, xmm2
         pcmpgtb xmm1, xmm2
         pcmpgtb xmm1, xmm2
-        pcmpgtb xmm1, xmm2
-        pcmpgtb xmm1, xmm2
-        pcmpgtb xmm1, xmm2
-        pcmpgtb xmm1, xmm2
-        pcmpgtb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpgtb_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
+        pcmpgtb xmm1, xmm2
         pcmpgtb xmm1, xmm2
         pcmpgtb xmm1, xmm2
         pcmpgtb xmm1, xmm2
@@ -1609,16 +3712,96 @@ void __declspec(noinline) __cdecl run_pcmpgtd_xmm1xmm2_10_times()
         pcmpgtd xmm1, xmm2
         pcmpgtd xmm1, xmm2
         pcmpgtd xmm1, xmm2
-        pcmpgtd xmm1, xmm2
-        pcmpgtd xmm1, xmm2
-        pcmpgtd xmm1, xmm2
-        pcmpgtd xmm1, xmm2
-        pcmpgtd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpgtd_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
+        pcmpgtd xmm1, xmm2
         pcmpgtd xmm1, xmm2
         pcmpgtd xmm1, xmm2
         pcmpgtd xmm1, xmm2
@@ -1666,16 +3849,96 @@ void __declspec(noinline) __cdecl run_pcmpgtw_xmm1xmm2_10_times()
         pcmpgtw xmm1, xmm2
         pcmpgtw xmm1, xmm2
         pcmpgtw xmm1, xmm2
-        pcmpgtw xmm1, xmm2
-        pcmpgtw xmm1, xmm2
-        pcmpgtw xmm1, xmm2
-        pcmpgtw xmm1, xmm2
-        pcmpgtw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pcmpgtw_xmm1xmm2_20_times()
 {
     __asm {
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
+        pcmpgtw xmm1, xmm2
         pcmpgtw xmm1, xmm2
         pcmpgtw xmm1, xmm2
         pcmpgtw xmm1, xmm2
@@ -1723,16 +3986,96 @@ void __declspec(noinline) __cdecl run_pextrw_eaxxmm11_10_times()
         pextrw eax, xmm1, 1
         pextrw eax, xmm1, 1
         pextrw eax, xmm1, 1
-        pextrw eax, xmm1, 1
-        pextrw eax, xmm1, 1
-        pextrw eax, xmm1, 1
-        pextrw eax, xmm1, 1
-        pextrw eax, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pextrw_eaxxmm11_20_times()
 {
     __asm {
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
+        pextrw eax, xmm1, 1
         pextrw eax, xmm1, 1
         pextrw eax, xmm1, 1
         pextrw eax, xmm1, 1
@@ -1780,16 +4123,96 @@ void __declspec(noinline) __cdecl run_pinsrw_xmm1eax1_10_times()
         pinsrw xmm1, eax, 1
         pinsrw xmm1, eax, 1
         pinsrw xmm1, eax, 1
-        pinsrw xmm1, eax, 1
-        pinsrw xmm1, eax, 1
-        pinsrw xmm1, eax, 1
-        pinsrw xmm1, eax, 1
-        pinsrw xmm1, eax, 1
     };
 }
 void __declspec(noinline) __cdecl run_pinsrw_xmm1eax1_20_times()
 {
     __asm {
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
+        pinsrw xmm1, eax, 1
         pinsrw xmm1, eax, 1
         pinsrw xmm1, eax, 1
         pinsrw xmm1, eax, 1
@@ -1837,16 +4260,96 @@ void __declspec(noinline) __cdecl run_pmaddwd_xmm1xmm2_10_times()
         pmaddwd xmm1, xmm2
         pmaddwd xmm1, xmm2
         pmaddwd xmm1, xmm2
-        pmaddwd xmm1, xmm2
-        pmaddwd xmm1, xmm2
-        pmaddwd xmm1, xmm2
-        pmaddwd xmm1, xmm2
-        pmaddwd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmaddwd_xmm1xmm2_20_times()
 {
     __asm {
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
+        pmaddwd xmm1, xmm2
         pmaddwd xmm1, xmm2
         pmaddwd xmm1, xmm2
         pmaddwd xmm1, xmm2
@@ -1894,16 +4397,96 @@ void __declspec(noinline) __cdecl run_pmaxsw_xmm1xmm2_10_times()
         pmaxsw xmm1, xmm2
         pmaxsw xmm1, xmm2
         pmaxsw xmm1, xmm2
-        pmaxsw xmm1, xmm2
-        pmaxsw xmm1, xmm2
-        pmaxsw xmm1, xmm2
-        pmaxsw xmm1, xmm2
-        pmaxsw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmaxsw_xmm1xmm2_20_times()
 {
     __asm {
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
+        pmaxsw xmm1, xmm2
         pmaxsw xmm1, xmm2
         pmaxsw xmm1, xmm2
         pmaxsw xmm1, xmm2
@@ -1951,16 +4534,96 @@ void __declspec(noinline) __cdecl run_pmaxub_xmm1xmm2_10_times()
         pmaxub xmm1, xmm2
         pmaxub xmm1, xmm2
         pmaxub xmm1, xmm2
-        pmaxub xmm1, xmm2
-        pmaxub xmm1, xmm2
-        pmaxub xmm1, xmm2
-        pmaxub xmm1, xmm2
-        pmaxub xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmaxub_xmm1xmm2_20_times()
 {
     __asm {
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
+        pmaxub xmm1, xmm2
         pmaxub xmm1, xmm2
         pmaxub xmm1, xmm2
         pmaxub xmm1, xmm2
@@ -2008,16 +4671,96 @@ void __declspec(noinline) __cdecl run_pminsw_xmm1xmm2_10_times()
         pminsw xmm1, xmm2
         pminsw xmm1, xmm2
         pminsw xmm1, xmm2
-        pminsw xmm1, xmm2
-        pminsw xmm1, xmm2
-        pminsw xmm1, xmm2
-        pminsw xmm1, xmm2
-        pminsw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pminsw_xmm1xmm2_20_times()
 {
     __asm {
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
+        pminsw xmm1, xmm2
         pminsw xmm1, xmm2
         pminsw xmm1, xmm2
         pminsw xmm1, xmm2
@@ -2065,16 +4808,96 @@ void __declspec(noinline) __cdecl run_pminub_xmm1xmm2_10_times()
         pminub xmm1, xmm2
         pminub xmm1, xmm2
         pminub xmm1, xmm2
-        pminub xmm1, xmm2
-        pminub xmm1, xmm2
-        pminub xmm1, xmm2
-        pminub xmm1, xmm2
-        pminub xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pminub_xmm1xmm2_20_times()
 {
     __asm {
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
+        pminub xmm1, xmm2
         pminub xmm1, xmm2
         pminub xmm1, xmm2
         pminub xmm1, xmm2
@@ -2122,16 +4945,96 @@ void __declspec(noinline) __cdecl run_pmovmskb_eaxxmm2_10_times()
         pmovmskb eax, xmm2
         pmovmskb eax, xmm2
         pmovmskb eax, xmm2
-        pmovmskb eax, xmm2
-        pmovmskb eax, xmm2
-        pmovmskb eax, xmm2
-        pmovmskb eax, xmm2
-        pmovmskb eax, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmovmskb_eaxxmm2_20_times()
 {
     __asm {
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
+        pmovmskb eax, xmm2
         pmovmskb eax, xmm2
         pmovmskb eax, xmm2
         pmovmskb eax, xmm2
@@ -2179,16 +5082,96 @@ void __declspec(noinline) __cdecl run_pmulhuw_xmm1xmm2_10_times()
         pmulhuw xmm1, xmm2
         pmulhuw xmm1, xmm2
         pmulhuw xmm1, xmm2
-        pmulhuw xmm1, xmm2
-        pmulhuw xmm1, xmm2
-        pmulhuw xmm1, xmm2
-        pmulhuw xmm1, xmm2
-        pmulhuw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmulhuw_xmm1xmm2_20_times()
 {
     __asm {
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
+        pmulhuw xmm1, xmm2
         pmulhuw xmm1, xmm2
         pmulhuw xmm1, xmm2
         pmulhuw xmm1, xmm2
@@ -2236,16 +5219,96 @@ void __declspec(noinline) __cdecl run_pmulhw_xmm1xmm2_10_times()
         pmulhw xmm1, xmm2
         pmulhw xmm1, xmm2
         pmulhw xmm1, xmm2
-        pmulhw xmm1, xmm2
-        pmulhw xmm1, xmm2
-        pmulhw xmm1, xmm2
-        pmulhw xmm1, xmm2
-        pmulhw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmulhw_xmm1xmm2_20_times()
 {
     __asm {
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
+        pmulhw xmm1, xmm2
         pmulhw xmm1, xmm2
         pmulhw xmm1, xmm2
         pmulhw xmm1, xmm2
@@ -2293,16 +5356,96 @@ void __declspec(noinline) __cdecl run_pmullw_xmm1xmm2_10_times()
         pmullw xmm1, xmm2
         pmullw xmm1, xmm2
         pmullw xmm1, xmm2
-        pmullw xmm1, xmm2
-        pmullw xmm1, xmm2
-        pmullw xmm1, xmm2
-        pmullw xmm1, xmm2
-        pmullw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmullw_xmm1xmm2_20_times()
 {
     __asm {
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
+        pmullw xmm1, xmm2
         pmullw xmm1, xmm2
         pmullw xmm1, xmm2
         pmullw xmm1, xmm2
@@ -2350,16 +5493,96 @@ void __declspec(noinline) __cdecl run_pmuludq_xmm1xmm2_10_times()
         pmuludq xmm1, xmm2
         pmuludq xmm1, xmm2
         pmuludq xmm1, xmm2
-        pmuludq xmm1, xmm2
-        pmuludq xmm1, xmm2
-        pmuludq xmm1, xmm2
-        pmuludq xmm1, xmm2
-        pmuludq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pmuludq_xmm1xmm2_20_times()
 {
     __asm {
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
+        pmuludq xmm1, xmm2
         pmuludq xmm1, xmm2
         pmuludq xmm1, xmm2
         pmuludq xmm1, xmm2
@@ -2407,16 +5630,96 @@ void __declspec(noinline) __cdecl run_por_xmm1xmm2_10_times()
         por xmm1, xmm2
         por xmm1, xmm2
         por xmm1, xmm2
-        por xmm1, xmm2
-        por xmm1, xmm2
-        por xmm1, xmm2
-        por xmm1, xmm2
-        por xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_por_xmm1xmm2_20_times()
 {
     __asm {
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
+        por xmm1, xmm2
         por xmm1, xmm2
         por xmm1, xmm2
         por xmm1, xmm2
@@ -2464,16 +5767,96 @@ void __declspec(noinline) __cdecl run_psadbw_xmm1xmm2_10_times()
         psadbw xmm1, xmm2
         psadbw xmm1, xmm2
         psadbw xmm1, xmm2
-        psadbw xmm1, xmm2
-        psadbw xmm1, xmm2
-        psadbw xmm1, xmm2
-        psadbw xmm1, xmm2
-        psadbw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psadbw_xmm1xmm2_20_times()
 {
     __asm {
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
+        psadbw xmm1, xmm2
         psadbw xmm1, xmm2
         psadbw xmm1, xmm2
         psadbw xmm1, xmm2
@@ -2521,16 +5904,96 @@ void __declspec(noinline) __cdecl run_pshufd_xmm1xmm11_10_times()
         pshufd xmm1, xmm1, 1
         pshufd xmm1, xmm1, 1
         pshufd xmm1, xmm1, 1
-        pshufd xmm1, xmm1, 1
-        pshufd xmm1, xmm1, 1
-        pshufd xmm1, xmm1, 1
-        pshufd xmm1, xmm1, 1
-        pshufd xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pshufd_xmm1xmm11_20_times()
 {
     __asm {
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
+        pshufd xmm1, xmm1, 1
         pshufd xmm1, xmm1, 1
         pshufd xmm1, xmm1, 1
         pshufd xmm1, xmm1, 1
@@ -2578,16 +6041,96 @@ void __declspec(noinline) __cdecl run_pshufhw_xmm1xmm11_10_times()
         pshufhw xmm1, xmm1, 1
         pshufhw xmm1, xmm1, 1
         pshufhw xmm1, xmm1, 1
-        pshufhw xmm1, xmm1, 1
-        pshufhw xmm1, xmm1, 1
-        pshufhw xmm1, xmm1, 1
-        pshufhw xmm1, xmm1, 1
-        pshufhw xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pshufhw_xmm1xmm11_20_times()
 {
     __asm {
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
+        pshufhw xmm1, xmm1, 1
         pshufhw xmm1, xmm1, 1
         pshufhw xmm1, xmm1, 1
         pshufhw xmm1, xmm1, 1
@@ -2635,16 +6178,96 @@ void __declspec(noinline) __cdecl run_pshuflw_xmm1xmm11_10_times()
         pshuflw xmm1, xmm1, 1
         pshuflw xmm1, xmm1, 1
         pshuflw xmm1, xmm1, 1
-        pshuflw xmm1, xmm1, 1
-        pshuflw xmm1, xmm1, 1
-        pshuflw xmm1, xmm1, 1
-        pshuflw xmm1, xmm1, 1
-        pshuflw xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pshuflw_xmm1xmm11_20_times()
 {
     __asm {
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
+        pshuflw xmm1, xmm1, 1
         pshuflw xmm1, xmm1, 1
         pshuflw xmm1, xmm1, 1
         pshuflw xmm1, xmm1, 1
@@ -2692,16 +6315,96 @@ void __declspec(noinline) __cdecl run_pslldq_xmm11_10_times()
         pslldq xmm1, 1
         pslldq xmm1, 1
         pslldq xmm1, 1
-        pslldq xmm1, 1
-        pslldq xmm1, 1
-        pslldq xmm1, 1
-        pslldq xmm1, 1
-        pslldq xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pslldq_xmm11_20_times()
 {
     __asm {
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
+        pslldq xmm1, 1
         pslldq xmm1, 1
         pslldq xmm1, 1
         pslldq xmm1, 1
@@ -2749,16 +6452,96 @@ void __declspec(noinline) __cdecl run_psllw_xmm11_10_times()
         psllw xmm1, 1
         psllw xmm1, 1
         psllw xmm1, 1
-        psllw xmm1, 1
-        psllw xmm1, 1
-        psllw xmm1, 1
-        psllw xmm1, 1
-        psllw xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psllw_xmm11_20_times()
 {
     __asm {
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
+        psllw xmm1, 1
         psllw xmm1, 1
         psllw xmm1, 1
         psllw xmm1, 1
@@ -2806,16 +6589,96 @@ void __declspec(noinline) __cdecl run_pslld_xmm11_10_times()
         pslld xmm1, 1
         pslld xmm1, 1
         pslld xmm1, 1
-        pslld xmm1, 1
-        pslld xmm1, 1
-        pslld xmm1, 1
-        pslld xmm1, 1
-        pslld xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_pslld_xmm11_20_times()
 {
     __asm {
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
+        pslld xmm1, 1
         pslld xmm1, 1
         pslld xmm1, 1
         pslld xmm1, 1
@@ -2863,16 +6726,96 @@ void __declspec(noinline) __cdecl run_psllq_xmm11_10_times()
         psllq xmm1, 1
         psllq xmm1, 1
         psllq xmm1, 1
-        psllq xmm1, 1
-        psllq xmm1, 1
-        psllq xmm1, 1
-        psllq xmm1, 1
-        psllq xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psllq_xmm11_20_times()
 {
     __asm {
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
+        psllq xmm1, 1
         psllq xmm1, 1
         psllq xmm1, 1
         psllq xmm1, 1
@@ -2920,16 +6863,96 @@ void __declspec(noinline) __cdecl run_psll_xmm1xmm2_10_times()
         psll xmm1, xmm2
         psll xmm1, xmm2
         psll xmm1, xmm2
-        psll xmm1, xmm2
-        psll xmm1, xmm2
-        psll xmm1, xmm2
-        psll xmm1, xmm2
-        psll xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psll_xmm1xmm2_20_times()
 {
     __asm {
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
+        psll xmm1, xmm2
         psll xmm1, xmm2
         psll xmm1, xmm2
         psll xmm1, xmm2
@@ -2977,16 +7000,96 @@ void __declspec(noinline) __cdecl run_psrl_xmm1xmm2_10_times()
         psrl xmm1, xmm2
         psrl xmm1, xmm2
         psrl xmm1, xmm2
-        psrl xmm1, xmm2
-        psrl xmm1, xmm2
-        psrl xmm1, xmm2
-        psrl xmm1, xmm2
-        psrl xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psrl_xmm1xmm2_20_times()
 {
     __asm {
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
+        psrl xmm1, xmm2
         psrl xmm1, xmm2
         psrl xmm1, xmm2
         psrl xmm1, xmm2
@@ -3034,16 +7137,96 @@ void __declspec(noinline) __cdecl run_psraw_xmm11_10_times()
         psraw xmm1, 1
         psraw xmm1, 1
         psraw xmm1, 1
-        psraw xmm1, 1
-        psraw xmm1, 1
-        psraw xmm1, 1
-        psraw xmm1, 1
-        psraw xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psraw_xmm11_20_times()
 {
     __asm {
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
+        psraw xmm1, 1
         psraw xmm1, 1
         psraw xmm1, 1
         psraw xmm1, 1
@@ -3091,16 +7274,96 @@ void __declspec(noinline) __cdecl run_psrad_xmm11_10_times()
         psrad xmm1, 1
         psrad xmm1, 1
         psrad xmm1, 1
-        psrad xmm1, 1
-        psrad xmm1, 1
-        psrad xmm1, 1
-        psrad xmm1, 1
-        psrad xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psrad_xmm11_20_times()
 {
     __asm {
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
+        psrad xmm1, 1
         psrad xmm1, 1
         psrad xmm1, 1
         psrad xmm1, 1
@@ -3148,16 +7411,96 @@ void __declspec(noinline) __cdecl run_psraw_xmm1xmm2_10_times()
         psraw xmm1, xmm2
         psraw xmm1, xmm2
         psraw xmm1, xmm2
-        psraw xmm1, xmm2
-        psraw xmm1, xmm2
-        psraw xmm1, xmm2
-        psraw xmm1, xmm2
-        psraw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psraw_xmm1xmm2_20_times()
 {
     __asm {
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
+        psraw xmm1, xmm2
         psraw xmm1, xmm2
         psraw xmm1, xmm2
         psraw xmm1, xmm2
@@ -3205,16 +7548,96 @@ void __declspec(noinline) __cdecl run_psrad_xmm1xmm2_10_times()
         psrad xmm1, xmm2
         psrad xmm1, xmm2
         psrad xmm1, xmm2
-        psrad xmm1, xmm2
-        psrad xmm1, xmm2
-        psrad xmm1, xmm2
-        psrad xmm1, xmm2
-        psrad xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psrad_xmm1xmm2_20_times()
 {
     __asm {
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
+        psrad xmm1, xmm2
         psrad xmm1, xmm2
         psrad xmm1, xmm2
         psrad xmm1, xmm2
@@ -3262,16 +7685,96 @@ void __declspec(noinline) __cdecl run_psrldq_xmm11_10_times()
         psrldq xmm1, 1
         psrldq xmm1, 1
         psrldq xmm1, 1
-        psrldq xmm1, 1
-        psrldq xmm1, 1
-        psrldq xmm1, 1
-        psrldq xmm1, 1
-        psrldq xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psrldq_xmm11_20_times()
 {
     __asm {
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
+        psrldq xmm1, 1
         psrldq xmm1, 1
         psrldq xmm1, 1
         psrldq xmm1, 1
@@ -3319,16 +7822,96 @@ void __declspec(noinline) __cdecl run_psrlw_xmm11_10_times()
         psrlw xmm1, 1
         psrlw xmm1, 1
         psrlw xmm1, 1
-        psrlw xmm1, 1
-        psrlw xmm1, 1
-        psrlw xmm1, 1
-        psrlw xmm1, 1
-        psrlw xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psrlw_xmm11_20_times()
 {
     __asm {
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
+        psrlw xmm1, 1
         psrlw xmm1, 1
         psrlw xmm1, 1
         psrlw xmm1, 1
@@ -3376,16 +7959,96 @@ void __declspec(noinline) __cdecl run_psrld_xmm11_10_times()
         psrld xmm1, 1
         psrld xmm1, 1
         psrld xmm1, 1
-        psrld xmm1, 1
-        psrld xmm1, 1
-        psrld xmm1, 1
-        psrld xmm1, 1
-        psrld xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psrld_xmm11_20_times()
 {
     __asm {
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
+        psrld xmm1, 1
         psrld xmm1, 1
         psrld xmm1, 1
         psrld xmm1, 1
@@ -3433,16 +8096,96 @@ void __declspec(noinline) __cdecl run_psrlq_xmm11_10_times()
         psrlq xmm1, 1
         psrlq xmm1, 1
         psrlq xmm1, 1
-        psrlq xmm1, 1
-        psrlq xmm1, 1
-        psrlq xmm1, 1
-        psrlq xmm1, 1
-        psrlq xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_psrlq_xmm11_20_times()
 {
     __asm {
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
+        psrlq xmm1, 1
         psrlq xmm1, 1
         psrlq xmm1, 1
         psrlq xmm1, 1
@@ -3490,16 +8233,96 @@ void __declspec(noinline) __cdecl run_psubb_xmm1xmm2_10_times()
         psubb xmm1, xmm2
         psubb xmm1, xmm2
         psubb xmm1, xmm2
-        psubb xmm1, xmm2
-        psubb xmm1, xmm2
-        psubb xmm1, xmm2
-        psubb xmm1, xmm2
-        psubb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubb_xmm1xmm2_20_times()
 {
     __asm {
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
+        psubb xmm1, xmm2
         psubb xmm1, xmm2
         psubb xmm1, xmm2
         psubb xmm1, xmm2
@@ -3547,16 +8370,96 @@ void __declspec(noinline) __cdecl run_psubw_xmm1xmm2_10_times()
         psubw xmm1, xmm2
         psubw xmm1, xmm2
         psubw xmm1, xmm2
-        psubw xmm1, xmm2
-        psubw xmm1, xmm2
-        psubw xmm1, xmm2
-        psubw xmm1, xmm2
-        psubw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubw_xmm1xmm2_20_times()
 {
     __asm {
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
+        psubw xmm1, xmm2
         psubw xmm1, xmm2
         psubw xmm1, xmm2
         psubw xmm1, xmm2
@@ -3604,16 +8507,96 @@ void __declspec(noinline) __cdecl run_psubd_xmm1xmm2_10_times()
         psubd xmm1, xmm2
         psubd xmm1, xmm2
         psubd xmm1, xmm2
-        psubd xmm1, xmm2
-        psubd xmm1, xmm2
-        psubd xmm1, xmm2
-        psubd xmm1, xmm2
-        psubd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubd_xmm1xmm2_20_times()
 {
     __asm {
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
+        psubd xmm1, xmm2
         psubd xmm1, xmm2
         psubd xmm1, xmm2
         psubd xmm1, xmm2
@@ -3661,16 +8644,96 @@ void __declspec(noinline) __cdecl run_psubsb_xmm1xmm2_10_times()
         psubsb xmm1, xmm2
         psubsb xmm1, xmm2
         psubsb xmm1, xmm2
-        psubsb xmm1, xmm2
-        psubsb xmm1, xmm2
-        psubsb xmm1, xmm2
-        psubsb xmm1, xmm2
-        psubsb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubsb_xmm1xmm2_20_times()
 {
     __asm {
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
+        psubsb xmm1, xmm2
         psubsb xmm1, xmm2
         psubsb xmm1, xmm2
         psubsb xmm1, xmm2
@@ -3718,16 +8781,96 @@ void __declspec(noinline) __cdecl run_psubsw_xmm1xmm2_10_times()
         psubsw xmm1, xmm2
         psubsw xmm1, xmm2
         psubsw xmm1, xmm2
-        psubsw xmm1, xmm2
-        psubsw xmm1, xmm2
-        psubsw xmm1, xmm2
-        psubsw xmm1, xmm2
-        psubsw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubsw_xmm1xmm2_20_times()
 {
     __asm {
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
+        psubsw xmm1, xmm2
         psubsw xmm1, xmm2
         psubsw xmm1, xmm2
         psubsw xmm1, xmm2
@@ -3775,16 +8918,96 @@ void __declspec(noinline) __cdecl run_psubusb_xmm1xmm2_10_times()
         psubusb xmm1, xmm2
         psubusb xmm1, xmm2
         psubusb xmm1, xmm2
-        psubusb xmm1, xmm2
-        psubusb xmm1, xmm2
-        psubusb xmm1, xmm2
-        psubusb xmm1, xmm2
-        psubusb xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubusb_xmm1xmm2_20_times()
 {
     __asm {
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
+        psubusb xmm1, xmm2
         psubusb xmm1, xmm2
         psubusb xmm1, xmm2
         psubusb xmm1, xmm2
@@ -3832,16 +9055,96 @@ void __declspec(noinline) __cdecl run_psubusw_xmm1xmm2_10_times()
         psubusw xmm1, xmm2
         psubusw xmm1, xmm2
         psubusw xmm1, xmm2
-        psubusw xmm1, xmm2
-        psubusw xmm1, xmm2
-        psubusw xmm1, xmm2
-        psubusw xmm1, xmm2
-        psubusw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_psubusw_xmm1xmm2_20_times()
 {
     __asm {
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
+        psubusw xmm1, xmm2
         psubusw xmm1, xmm2
         psubusw xmm1, xmm2
         psubusw xmm1, xmm2
@@ -3889,16 +9192,96 @@ void __declspec(noinline) __cdecl run_punpckhbw_xmm1xmm2_10_times()
         punpckhbw xmm1, xmm2
         punpckhbw xmm1, xmm2
         punpckhbw xmm1, xmm2
-        punpckhbw xmm1, xmm2
-        punpckhbw xmm1, xmm2
-        punpckhbw xmm1, xmm2
-        punpckhbw xmm1, xmm2
-        punpckhbw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpckhbw_xmm1xmm2_20_times()
 {
     __asm {
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
+        punpckhbw xmm1, xmm2
         punpckhbw xmm1, xmm2
         punpckhbw xmm1, xmm2
         punpckhbw xmm1, xmm2
@@ -3946,16 +9329,96 @@ void __declspec(noinline) __cdecl run_punpckhwd_xmm1xmm2_10_times()
         punpckhwd xmm1, xmm2
         punpckhwd xmm1, xmm2
         punpckhwd xmm1, xmm2
-        punpckhwd xmm1, xmm2
-        punpckhwd xmm1, xmm2
-        punpckhwd xmm1, xmm2
-        punpckhwd xmm1, xmm2
-        punpckhwd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpckhwd_xmm1xmm2_20_times()
 {
     __asm {
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
+        punpckhwd xmm1, xmm2
         punpckhwd xmm1, xmm2
         punpckhwd xmm1, xmm2
         punpckhwd xmm1, xmm2
@@ -4003,16 +9466,96 @@ void __declspec(noinline) __cdecl run_punpckhdq_xmm1xmm2_10_times()
         punpckhdq xmm1, xmm2
         punpckhdq xmm1, xmm2
         punpckhdq xmm1, xmm2
-        punpckhdq xmm1, xmm2
-        punpckhdq xmm1, xmm2
-        punpckhdq xmm1, xmm2
-        punpckhdq xmm1, xmm2
-        punpckhdq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpckhdq_xmm1xmm2_20_times()
 {
     __asm {
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
+        punpckhdq xmm1, xmm2
         punpckhdq xmm1, xmm2
         punpckhdq xmm1, xmm2
         punpckhdq xmm1, xmm2
@@ -4060,16 +9603,96 @@ void __declspec(noinline) __cdecl run_punpckhqdq_xmm1xmm2_10_times()
         punpckhqdq xmm1, xmm2
         punpckhqdq xmm1, xmm2
         punpckhqdq xmm1, xmm2
-        punpckhqdq xmm1, xmm2
-        punpckhqdq xmm1, xmm2
-        punpckhqdq xmm1, xmm2
-        punpckhqdq xmm1, xmm2
-        punpckhqdq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpckhqdq_xmm1xmm2_20_times()
 {
     __asm {
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
+        punpckhqdq xmm1, xmm2
         punpckhqdq xmm1, xmm2
         punpckhqdq xmm1, xmm2
         punpckhqdq xmm1, xmm2
@@ -4117,16 +9740,96 @@ void __declspec(noinline) __cdecl run_punpcklbw_xmm1xmm2_10_times()
         punpcklbw xmm1, xmm2
         punpcklbw xmm1, xmm2
         punpcklbw xmm1, xmm2
-        punpcklbw xmm1, xmm2
-        punpcklbw xmm1, xmm2
-        punpcklbw xmm1, xmm2
-        punpcklbw xmm1, xmm2
-        punpcklbw xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpcklbw_xmm1xmm2_20_times()
 {
     __asm {
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
+        punpcklbw xmm1, xmm2
         punpcklbw xmm1, xmm2
         punpcklbw xmm1, xmm2
         punpcklbw xmm1, xmm2
@@ -4174,16 +9877,96 @@ void __declspec(noinline) __cdecl run_punpcklwd_xmm1xmm2_10_times()
         punpcklwd xmm1, xmm2
         punpcklwd xmm1, xmm2
         punpcklwd xmm1, xmm2
-        punpcklwd xmm1, xmm2
-        punpcklwd xmm1, xmm2
-        punpcklwd xmm1, xmm2
-        punpcklwd xmm1, xmm2
-        punpcklwd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpcklwd_xmm1xmm2_20_times()
 {
     __asm {
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
+        punpcklwd xmm1, xmm2
         punpcklwd xmm1, xmm2
         punpcklwd xmm1, xmm2
         punpcklwd xmm1, xmm2
@@ -4231,16 +10014,96 @@ void __declspec(noinline) __cdecl run_punpckldq_xmm1xmm2_10_times()
         punpckldq xmm1, xmm2
         punpckldq xmm1, xmm2
         punpckldq xmm1, xmm2
-        punpckldq xmm1, xmm2
-        punpckldq xmm1, xmm2
-        punpckldq xmm1, xmm2
-        punpckldq xmm1, xmm2
-        punpckldq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpckldq_xmm1xmm2_20_times()
 {
     __asm {
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
+        punpckldq xmm1, xmm2
         punpckldq xmm1, xmm2
         punpckldq xmm1, xmm2
         punpckldq xmm1, xmm2
@@ -4288,16 +10151,96 @@ void __declspec(noinline) __cdecl run_punpcklqdq_xmm1xmm2_10_times()
         punpcklqdq xmm1, xmm2
         punpcklqdq xmm1, xmm2
         punpcklqdq xmm1, xmm2
-        punpcklqdq xmm1, xmm2
-        punpcklqdq xmm1, xmm2
-        punpcklqdq xmm1, xmm2
-        punpcklqdq xmm1, xmm2
-        punpcklqdq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_punpcklqdq_xmm1xmm2_20_times()
 {
     __asm {
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
+        punpcklqdq xmm1, xmm2
         punpcklqdq xmm1, xmm2
         punpcklqdq xmm1, xmm2
         punpcklqdq xmm1, xmm2
@@ -4345,16 +10288,96 @@ void __declspec(noinline) __cdecl run_pxor_xmm1xmm2_10_times()
         pxor xmm1, xmm2
         pxor xmm1, xmm2
         pxor xmm1, xmm2
-        pxor xmm1, xmm2
-        pxor xmm1, xmm2
-        pxor xmm1, xmm2
-        pxor xmm1, xmm2
-        pxor xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_pxor_xmm1xmm2_20_times()
 {
     __asm {
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
+        pxor xmm1, xmm2
         pxor xmm1, xmm2
         pxor xmm1, xmm2
         pxor xmm1, xmm2
@@ -4402,16 +10425,96 @@ void __declspec(noinline) __cdecl run_addpd_xmm1xmm2_10_times()
         addpd xmm1, xmm2
         addpd xmm1, xmm2
         addpd xmm1, xmm2
-        addpd xmm1, xmm2
-        addpd xmm1, xmm2
-        addpd xmm1, xmm2
-        addpd xmm1, xmm2
-        addpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_addpd_xmm1xmm2_20_times()
 {
     __asm {
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
+        addpd xmm1, xmm2
         addpd xmm1, xmm2
         addpd xmm1, xmm2
         addpd xmm1, xmm2
@@ -4459,16 +10562,96 @@ void __declspec(noinline) __cdecl run_addsd_xmm1xmm2_10_times()
         addsd xmm1, xmm2
         addsd xmm1, xmm2
         addsd xmm1, xmm2
-        addsd xmm1, xmm2
-        addsd xmm1, xmm2
-        addsd xmm1, xmm2
-        addsd xmm1, xmm2
-        addsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_addsd_xmm1xmm2_20_times()
 {
     __asm {
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
+        addsd xmm1, xmm2
         addsd xmm1, xmm2
         addsd xmm1, xmm2
         addsd xmm1, xmm2
@@ -4516,16 +10699,96 @@ void __declspec(noinline) __cdecl run_andnpd_xmm1xmm2_10_times()
         andnpd xmm1, xmm2
         andnpd xmm1, xmm2
         andnpd xmm1, xmm2
-        andnpd xmm1, xmm2
-        andnpd xmm1, xmm2
-        andnpd xmm1, xmm2
-        andnpd xmm1, xmm2
-        andnpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_andnpd_xmm1xmm2_20_times()
 {
     __asm {
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
+        andnpd xmm1, xmm2
         andnpd xmm1, xmm2
         andnpd xmm1, xmm2
         andnpd xmm1, xmm2
@@ -4573,16 +10836,96 @@ void __declspec(noinline) __cdecl run_andpd_xmm1xmm2_10_times()
         andpd xmm1, xmm2
         andpd xmm1, xmm2
         andpd xmm1, xmm2
-        andpd xmm1, xmm2
-        andpd xmm1, xmm2
-        andpd xmm1, xmm2
-        andpd xmm1, xmm2
-        andpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_andpd_xmm1xmm2_20_times()
 {
     __asm {
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
+        andpd xmm1, xmm2
         andpd xmm1, xmm2
         andpd xmm1, xmm2
         andpd xmm1, xmm2
@@ -4630,16 +10973,96 @@ void __declspec(noinline) __cdecl run_cmppd_xmm1xmm11_10_times()
         cmppd xmm1, xmm1, 1
         cmppd xmm1, xmm1, 1
         cmppd xmm1, xmm1, 1
-        cmppd xmm1, xmm1, 1
-        cmppd xmm1, xmm1, 1
-        cmppd xmm1, xmm1, 1
-        cmppd xmm1, xmm1, 1
-        cmppd xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_cmppd_xmm1xmm11_20_times()
 {
     __asm {
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
+        cmppd xmm1, xmm1, 1
         cmppd xmm1, xmm1, 1
         cmppd xmm1, xmm1, 1
         cmppd xmm1, xmm1, 1
@@ -4687,16 +11110,96 @@ void __declspec(noinline) __cdecl run_cmpsd_xmm1xmm11_10_times()
         cmpsd xmm1, xmm1, 1
         cmpsd xmm1, xmm1, 1
         cmpsd xmm1, xmm1, 1
-        cmpsd xmm1, xmm1, 1
-        cmpsd xmm1, xmm1, 1
-        cmpsd xmm1, xmm1, 1
-        cmpsd xmm1, xmm1, 1
-        cmpsd xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_cmpsd_xmm1xmm11_20_times()
 {
     __asm {
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
+        cmpsd xmm1, xmm1, 1
         cmpsd xmm1, xmm1, 1
         cmpsd xmm1, xmm1, 1
         cmpsd xmm1, xmm1, 1
@@ -4744,16 +11247,96 @@ void __declspec(noinline) __cdecl run_comisd_xmm1xmm2_10_times()
         comisd xmm1, xmm2
         comisd xmm1, xmm2
         comisd xmm1, xmm2
-        comisd xmm1, xmm2
-        comisd xmm1, xmm2
-        comisd xmm1, xmm2
-        comisd xmm1, xmm2
-        comisd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_comisd_xmm1xmm2_20_times()
 {
     __asm {
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
+        comisd xmm1, xmm2
         comisd xmm1, xmm2
         comisd xmm1, xmm2
         comisd xmm1, xmm2
@@ -4801,16 +11384,96 @@ void __declspec(noinline) __cdecl run_cvtdq2pd_xmm1xmm2_10_times()
         cvtdq2pd xmm1, xmm2
         cvtdq2pd xmm1, xmm2
         cvtdq2pd xmm1, xmm2
-        cvtdq2pd xmm1, xmm2
-        cvtdq2pd xmm1, xmm2
-        cvtdq2pd xmm1, xmm2
-        cvtdq2pd xmm1, xmm2
-        cvtdq2pd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtdq2pd_xmm1xmm2_20_times()
 {
     __asm {
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
+        cvtdq2pd xmm1, xmm2
         cvtdq2pd xmm1, xmm2
         cvtdq2pd xmm1, xmm2
         cvtdq2pd xmm1, xmm2
@@ -4858,16 +11521,96 @@ void __declspec(noinline) __cdecl run_cvtdq2ps_xmm1xmm2_10_times()
         cvtdq2ps xmm1, xmm2
         cvtdq2ps xmm1, xmm2
         cvtdq2ps xmm1, xmm2
-        cvtdq2ps xmm1, xmm2
-        cvtdq2ps xmm1, xmm2
-        cvtdq2ps xmm1, xmm2
-        cvtdq2ps xmm1, xmm2
-        cvtdq2ps xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtdq2ps_xmm1xmm2_20_times()
 {
     __asm {
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
+        cvtdq2ps xmm1, xmm2
         cvtdq2ps xmm1, xmm2
         cvtdq2ps xmm1, xmm2
         cvtdq2ps xmm1, xmm2
@@ -4915,16 +11658,96 @@ void __declspec(noinline) __cdecl run_cvtpd2dq_xmm1xmm2_10_times()
         cvtpd2dq xmm1, xmm2
         cvtpd2dq xmm1, xmm2
         cvtpd2dq xmm1, xmm2
-        cvtpd2dq xmm1, xmm2
-        cvtpd2dq xmm1, xmm2
-        cvtpd2dq xmm1, xmm2
-        cvtpd2dq xmm1, xmm2
-        cvtpd2dq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtpd2dq_xmm1xmm2_20_times()
 {
     __asm {
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
+        cvtpd2dq xmm1, xmm2
         cvtpd2dq xmm1, xmm2
         cvtpd2dq xmm1, xmm2
         cvtpd2dq xmm1, xmm2
@@ -4972,16 +11795,96 @@ void __declspec(noinline) __cdecl run_cvtpd2ps_xmm1xmm2_10_times()
         cvtpd2ps xmm1, xmm2
         cvtpd2ps xmm1, xmm2
         cvtpd2ps xmm1, xmm2
-        cvtpd2ps xmm1, xmm2
-        cvtpd2ps xmm1, xmm2
-        cvtpd2ps xmm1, xmm2
-        cvtpd2ps xmm1, xmm2
-        cvtpd2ps xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtpd2ps_xmm1xmm2_20_times()
 {
     __asm {
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
+        cvtpd2ps xmm1, xmm2
         cvtpd2ps xmm1, xmm2
         cvtpd2ps xmm1, xmm2
         cvtpd2ps xmm1, xmm2
@@ -5029,16 +11932,96 @@ void __declspec(noinline) __cdecl run_cvtps2pd_xmm1xmm2_10_times()
         cvtps2pd xmm1, xmm2
         cvtps2pd xmm1, xmm2
         cvtps2pd xmm1, xmm2
-        cvtps2pd xmm1, xmm2
-        cvtps2pd xmm1, xmm2
-        cvtps2pd xmm1, xmm2
-        cvtps2pd xmm1, xmm2
-        cvtps2pd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtps2pd_xmm1xmm2_20_times()
 {
     __asm {
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
+        cvtps2pd xmm1, xmm2
         cvtps2pd xmm1, xmm2
         cvtps2pd xmm1, xmm2
         cvtps2pd xmm1, xmm2
@@ -5086,16 +12069,96 @@ void __declspec(noinline) __cdecl run_cvtsd2si_eaxxmm2_10_times()
         cvtsd2si eax, xmm2
         cvtsd2si eax, xmm2
         cvtsd2si eax, xmm2
-        cvtsd2si eax, xmm2
-        cvtsd2si eax, xmm2
-        cvtsd2si eax, xmm2
-        cvtsd2si eax, xmm2
-        cvtsd2si eax, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtsd2si_eaxxmm2_20_times()
 {
     __asm {
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
+        cvtsd2si eax, xmm2
         cvtsd2si eax, xmm2
         cvtsd2si eax, xmm2
         cvtsd2si eax, xmm2
@@ -5143,16 +12206,96 @@ void __declspec(noinline) __cdecl run_cvttsd2si_eaxxmm2_10_times()
         cvttsd2si eax, xmm2
         cvttsd2si eax, xmm2
         cvttsd2si eax, xmm2
-        cvttsd2si eax, xmm2
-        cvttsd2si eax, xmm2
-        cvttsd2si eax, xmm2
-        cvttsd2si eax, xmm2
-        cvttsd2si eax, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvttsd2si_eaxxmm2_20_times()
 {
     __asm {
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
+        cvttsd2si eax, xmm2
         cvttsd2si eax, xmm2
         cvttsd2si eax, xmm2
         cvttsd2si eax, xmm2
@@ -5200,16 +12343,96 @@ void __declspec(noinline) __cdecl run_cvtsd2ss_xmm1xmm2_10_times()
         cvtsd2ss xmm1, xmm2
         cvtsd2ss xmm1, xmm2
         cvtsd2ss xmm1, xmm2
-        cvtsd2ss xmm1, xmm2
-        cvtsd2ss xmm1, xmm2
-        cvtsd2ss xmm1, xmm2
-        cvtsd2ss xmm1, xmm2
-        cvtsd2ss xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtsd2ss_xmm1xmm2_20_times()
 {
     __asm {
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
+        cvtsd2ss xmm1, xmm2
         cvtsd2ss xmm1, xmm2
         cvtsd2ss xmm1, xmm2
         cvtsd2ss xmm1, xmm2
@@ -5257,16 +12480,96 @@ void __declspec(noinline) __cdecl run_cvtsi2sd_xmm1eax_10_times()
         cvtsi2sd xmm1, eax
         cvtsi2sd xmm1, eax
         cvtsi2sd xmm1, eax
-        cvtsi2sd xmm1, eax
-        cvtsi2sd xmm1, eax
-        cvtsi2sd xmm1, eax
-        cvtsi2sd xmm1, eax
-        cvtsi2sd xmm1, eax
     };
 }
 void __declspec(noinline) __cdecl run_cvtsi2sd_xmm1eax_20_times()
 {
     __asm {
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
+        cvtsi2sd xmm1, eax
         cvtsi2sd xmm1, eax
         cvtsi2sd xmm1, eax
         cvtsi2sd xmm1, eax
@@ -5314,16 +12617,96 @@ void __declspec(noinline) __cdecl run_cvtss2sd_xmm1xmm2_10_times()
         cvtss2sd xmm1, xmm2
         cvtss2sd xmm1, xmm2
         cvtss2sd xmm1, xmm2
-        cvtss2sd xmm1, xmm2
-        cvtss2sd xmm1, xmm2
-        cvtss2sd xmm1, xmm2
-        cvtss2sd xmm1, xmm2
-        cvtss2sd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvtss2sd_xmm1xmm2_20_times()
 {
     __asm {
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
+        cvtss2sd xmm1, xmm2
         cvtss2sd xmm1, xmm2
         cvtss2sd xmm1, xmm2
         cvtss2sd xmm1, xmm2
@@ -5371,16 +12754,96 @@ void __declspec(noinline) __cdecl run_cvttpd2dq_xmm1xmm2_10_times()
         cvttpd2dq xmm1, xmm2
         cvttpd2dq xmm1, xmm2
         cvttpd2dq xmm1, xmm2
-        cvttpd2dq xmm1, xmm2
-        cvttpd2dq xmm1, xmm2
-        cvttpd2dq xmm1, xmm2
-        cvttpd2dq xmm1, xmm2
-        cvttpd2dq xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_cvttpd2dq_xmm1xmm2_20_times()
 {
     __asm {
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
+        cvttpd2dq xmm1, xmm2
         cvttpd2dq xmm1, xmm2
         cvttpd2dq xmm1, xmm2
         cvttpd2dq xmm1, xmm2
@@ -5428,16 +12891,96 @@ void __declspec(noinline) __cdecl run_divpd_xmm1xmm2_10_times()
         divpd xmm1, xmm2
         divpd xmm1, xmm2
         divpd xmm1, xmm2
-        divpd xmm1, xmm2
-        divpd xmm1, xmm2
-        divpd xmm1, xmm2
-        divpd xmm1, xmm2
-        divpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_divpd_xmm1xmm2_20_times()
 {
     __asm {
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
+        divpd xmm1, xmm2
         divpd xmm1, xmm2
         divpd xmm1, xmm2
         divpd xmm1, xmm2
@@ -5485,16 +13028,96 @@ void __declspec(noinline) __cdecl run_divsd_xmm1xmm2_10_times()
         divsd xmm1, xmm2
         divsd xmm1, xmm2
         divsd xmm1, xmm2
-        divsd xmm1, xmm2
-        divsd xmm1, xmm2
-        divsd xmm1, xmm2
-        divsd xmm1, xmm2
-        divsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_divsd_xmm1xmm2_20_times()
 {
     __asm {
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
+        divsd xmm1, xmm2
         divsd xmm1, xmm2
         divsd xmm1, xmm2
         divsd xmm1, xmm2
@@ -5542,16 +13165,96 @@ void __declspec(noinline) __cdecl run_maxpd_xmm1xmm2_10_times()
         maxpd xmm1, xmm2
         maxpd xmm1, xmm2
         maxpd xmm1, xmm2
-        maxpd xmm1, xmm2
-        maxpd xmm1, xmm2
-        maxpd xmm1, xmm2
-        maxpd xmm1, xmm2
-        maxpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_maxpd_xmm1xmm2_20_times()
 {
     __asm {
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
+        maxpd xmm1, xmm2
         maxpd xmm1, xmm2
         maxpd xmm1, xmm2
         maxpd xmm1, xmm2
@@ -5599,16 +13302,96 @@ void __declspec(noinline) __cdecl run_maxsd_xmm1xmm2_10_times()
         maxsd xmm1, xmm2
         maxsd xmm1, xmm2
         maxsd xmm1, xmm2
-        maxsd xmm1, xmm2
-        maxsd xmm1, xmm2
-        maxsd xmm1, xmm2
-        maxsd xmm1, xmm2
-        maxsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_maxsd_xmm1xmm2_20_times()
 {
     __asm {
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
+        maxsd xmm1, xmm2
         maxsd xmm1, xmm2
         maxsd xmm1, xmm2
         maxsd xmm1, xmm2
@@ -5656,16 +13439,96 @@ void __declspec(noinline) __cdecl run_minpd_xmm1xmm2_10_times()
         minpd xmm1, xmm2
         minpd xmm1, xmm2
         minpd xmm1, xmm2
-        minpd xmm1, xmm2
-        minpd xmm1, xmm2
-        minpd xmm1, xmm2
-        minpd xmm1, xmm2
-        minpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_minpd_xmm1xmm2_20_times()
 {
     __asm {
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
+        minpd xmm1, xmm2
         minpd xmm1, xmm2
         minpd xmm1, xmm2
         minpd xmm1, xmm2
@@ -5713,16 +13576,96 @@ void __declspec(noinline) __cdecl run_minsd_xmm1xmm2_10_times()
         minsd xmm1, xmm2
         minsd xmm1, xmm2
         minsd xmm1, xmm2
-        minsd xmm1, xmm2
-        minsd xmm1, xmm2
-        minsd xmm1, xmm2
-        minsd xmm1, xmm2
-        minsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_minsd_xmm1xmm2_20_times()
 {
     __asm {
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
+        minsd xmm1, xmm2
         minsd xmm1, xmm2
         minsd xmm1, xmm2
         minsd xmm1, xmm2
@@ -5770,16 +13713,96 @@ void __declspec(noinline) __cdecl run_movapd_xmm1xmm2_10_times()
         movapd xmm1, xmm2
         movapd xmm1, xmm2
         movapd xmm1, xmm2
-        movapd xmm1, xmm2
-        movapd xmm1, xmm2
-        movapd xmm1, xmm2
-        movapd xmm1, xmm2
-        movapd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movapd_xmm1xmm2_20_times()
 {
     __asm {
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
+        movapd xmm1, xmm2
         movapd xmm1, xmm2
         movapd xmm1, xmm2
         movapd xmm1, xmm2
@@ -5827,16 +13850,96 @@ void __declspec(noinline) __cdecl run_movmskpd_eaxxmm2_10_times()
         movmskpd eax, xmm2
         movmskpd eax, xmm2
         movmskpd eax, xmm2
-        movmskpd eax, xmm2
-        movmskpd eax, xmm2
-        movmskpd eax, xmm2
-        movmskpd eax, xmm2
-        movmskpd eax, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movmskpd_eaxxmm2_20_times()
 {
     __asm {
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
+        movmskpd eax, xmm2
         movmskpd eax, xmm2
         movmskpd eax, xmm2
         movmskpd eax, xmm2
@@ -5884,16 +13987,96 @@ void __declspec(noinline) __cdecl run_movsd_xmm1xmm2_10_times()
         movsd xmm1, xmm2
         movsd xmm1, xmm2
         movsd xmm1, xmm2
-        movsd xmm1, xmm2
-        movsd xmm1, xmm2
-        movsd xmm1, xmm2
-        movsd xmm1, xmm2
-        movsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movsd_xmm1xmm2_20_times()
 {
     __asm {
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
+        movsd xmm1, xmm2
         movsd xmm1, xmm2
         movsd xmm1, xmm2
         movsd xmm1, xmm2
@@ -5941,16 +14124,96 @@ void __declspec(noinline) __cdecl run_movupd_xmm1xmm2_10_times()
         movupd xmm1, xmm2
         movupd xmm1, xmm2
         movupd xmm1, xmm2
-        movupd xmm1, xmm2
-        movupd xmm1, xmm2
-        movupd xmm1, xmm2
-        movupd xmm1, xmm2
-        movupd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_movupd_xmm1xmm2_20_times()
 {
     __asm {
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
+        movupd xmm1, xmm2
         movupd xmm1, xmm2
         movupd xmm1, xmm2
         movupd xmm1, xmm2
@@ -5998,16 +14261,96 @@ void __declspec(noinline) __cdecl run_mulpd_xmm1xmm2_10_times()
         mulpd xmm1, xmm2
         mulpd xmm1, xmm2
         mulpd xmm1, xmm2
-        mulpd xmm1, xmm2
-        mulpd xmm1, xmm2
-        mulpd xmm1, xmm2
-        mulpd xmm1, xmm2
-        mulpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_mulpd_xmm1xmm2_20_times()
 {
     __asm {
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
+        mulpd xmm1, xmm2
         mulpd xmm1, xmm2
         mulpd xmm1, xmm2
         mulpd xmm1, xmm2
@@ -6055,16 +14398,96 @@ void __declspec(noinline) __cdecl run_mulsd_xmm1xmm2_10_times()
         mulsd xmm1, xmm2
         mulsd xmm1, xmm2
         mulsd xmm1, xmm2
-        mulsd xmm1, xmm2
-        mulsd xmm1, xmm2
-        mulsd xmm1, xmm2
-        mulsd xmm1, xmm2
-        mulsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_mulsd_xmm1xmm2_20_times()
 {
     __asm {
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
+        mulsd xmm1, xmm2
         mulsd xmm1, xmm2
         mulsd xmm1, xmm2
         mulsd xmm1, xmm2
@@ -6112,16 +14535,96 @@ void __declspec(noinline) __cdecl run_orpd_xmm1xmm2_10_times()
         orpd xmm1, xmm2
         orpd xmm1, xmm2
         orpd xmm1, xmm2
-        orpd xmm1, xmm2
-        orpd xmm1, xmm2
-        orpd xmm1, xmm2
-        orpd xmm1, xmm2
-        orpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_orpd_xmm1xmm2_20_times()
 {
     __asm {
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
+        orpd xmm1, xmm2
         orpd xmm1, xmm2
         orpd xmm1, xmm2
         orpd xmm1, xmm2
@@ -6169,16 +14672,96 @@ void __declspec(noinline) __cdecl run_shufpd_xmm1xmm11_10_times()
         shufpd xmm1, xmm1, 1
         shufpd xmm1, xmm1, 1
         shufpd xmm1, xmm1, 1
-        shufpd xmm1, xmm1, 1
-        shufpd xmm1, xmm1, 1
-        shufpd xmm1, xmm1, 1
-        shufpd xmm1, xmm1, 1
-        shufpd xmm1, xmm1, 1
     };
 }
 void __declspec(noinline) __cdecl run_shufpd_xmm1xmm11_20_times()
 {
     __asm {
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
+        shufpd xmm1, xmm1, 1
         shufpd xmm1, xmm1, 1
         shufpd xmm1, xmm1, 1
         shufpd xmm1, xmm1, 1
@@ -6226,16 +14809,96 @@ void __declspec(noinline) __cdecl run_sqrtpd_xmm1xmm2_10_times()
         sqrtpd xmm1, xmm2
         sqrtpd xmm1, xmm2
         sqrtpd xmm1, xmm2
-        sqrtpd xmm1, xmm2
-        sqrtpd xmm1, xmm2
-        sqrtpd xmm1, xmm2
-        sqrtpd xmm1, xmm2
-        sqrtpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_sqrtpd_xmm1xmm2_20_times()
 {
     __asm {
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
+        sqrtpd xmm1, xmm2
         sqrtpd xmm1, xmm2
         sqrtpd xmm1, xmm2
         sqrtpd xmm1, xmm2
@@ -6283,16 +14946,96 @@ void __declspec(noinline) __cdecl run_sqrtsd_xmm1xmm2_10_times()
         sqrtsd xmm1, xmm2
         sqrtsd xmm1, xmm2
         sqrtsd xmm1, xmm2
-        sqrtsd xmm1, xmm2
-        sqrtsd xmm1, xmm2
-        sqrtsd xmm1, xmm2
-        sqrtsd xmm1, xmm2
-        sqrtsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_sqrtsd_xmm1xmm2_20_times()
 {
     __asm {
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
+        sqrtsd xmm1, xmm2
         sqrtsd xmm1, xmm2
         sqrtsd xmm1, xmm2
         sqrtsd xmm1, xmm2
@@ -6340,16 +15083,96 @@ void __declspec(noinline) __cdecl run_subpd_xmm1xmm2_10_times()
         subpd xmm1, xmm2
         subpd xmm1, xmm2
         subpd xmm1, xmm2
-        subpd xmm1, xmm2
-        subpd xmm1, xmm2
-        subpd xmm1, xmm2
-        subpd xmm1, xmm2
-        subpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_subpd_xmm1xmm2_20_times()
 {
     __asm {
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
+        subpd xmm1, xmm2
         subpd xmm1, xmm2
         subpd xmm1, xmm2
         subpd xmm1, xmm2
@@ -6397,16 +15220,96 @@ void __declspec(noinline) __cdecl run_subsd_xmm1xmm2_10_times()
         subsd xmm1, xmm2
         subsd xmm1, xmm2
         subsd xmm1, xmm2
-        subsd xmm1, xmm2
-        subsd xmm1, xmm2
-        subsd xmm1, xmm2
-        subsd xmm1, xmm2
-        subsd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_subsd_xmm1xmm2_20_times()
 {
     __asm {
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
+        subsd xmm1, xmm2
         subsd xmm1, xmm2
         subsd xmm1, xmm2
         subsd xmm1, xmm2
@@ -6454,16 +15357,96 @@ void __declspec(noinline) __cdecl run_ucomisd_xmm1xmm2_10_times()
         ucomisd xmm1, xmm2
         ucomisd xmm1, xmm2
         ucomisd xmm1, xmm2
-        ucomisd xmm1, xmm2
-        ucomisd xmm1, xmm2
-        ucomisd xmm1, xmm2
-        ucomisd xmm1, xmm2
-        ucomisd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_ucomisd_xmm1xmm2_20_times()
 {
     __asm {
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
+        ucomisd xmm1, xmm2
         ucomisd xmm1, xmm2
         ucomisd xmm1, xmm2
         ucomisd xmm1, xmm2
@@ -6511,16 +15494,96 @@ void __declspec(noinline) __cdecl run_unpckhpd_xmm1xmm2_10_times()
         unpckhpd xmm1, xmm2
         unpckhpd xmm1, xmm2
         unpckhpd xmm1, xmm2
-        unpckhpd xmm1, xmm2
-        unpckhpd xmm1, xmm2
-        unpckhpd xmm1, xmm2
-        unpckhpd xmm1, xmm2
-        unpckhpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_unpckhpd_xmm1xmm2_20_times()
 {
     __asm {
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
+        unpckhpd xmm1, xmm2
         unpckhpd xmm1, xmm2
         unpckhpd xmm1, xmm2
         unpckhpd xmm1, xmm2
@@ -6568,16 +15631,96 @@ void __declspec(noinline) __cdecl run_unpcklpd_xmm1xmm2_10_times()
         unpcklpd xmm1, xmm2
         unpcklpd xmm1, xmm2
         unpcklpd xmm1, xmm2
-        unpcklpd xmm1, xmm2
-        unpcklpd xmm1, xmm2
-        unpcklpd xmm1, xmm2
-        unpcklpd xmm1, xmm2
-        unpcklpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_unpcklpd_xmm1xmm2_20_times()
 {
     __asm {
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
+        unpcklpd xmm1, xmm2
         unpcklpd xmm1, xmm2
         unpcklpd xmm1, xmm2
         unpcklpd xmm1, xmm2
@@ -6625,16 +15768,96 @@ void __declspec(noinline) __cdecl run_xorpd_xmm1xmm2_10_times()
         xorpd xmm1, xmm2
         xorpd xmm1, xmm2
         xorpd xmm1, xmm2
-        xorpd xmm1, xmm2
-        xorpd xmm1, xmm2
-        xorpd xmm1, xmm2
-        xorpd xmm1, xmm2
-        xorpd xmm1, xmm2
     };
 }
 void __declspec(noinline) __cdecl run_xorpd_xmm1xmm2_20_times()
 {
     __asm {
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
+        xorpd xmm1, xmm2
         xorpd xmm1, xmm2
         xorpd xmm1, xmm2
         xorpd xmm1, xmm2
@@ -6672,4 +15895,123 @@ void  test_xorpd_xmm1xmm2()
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "xorpd takes "<< clk << std::endl;
+}
+void run_all_sse2_tests()
+{
+    test_cvtps2dq_xmm1xmm2();
+    test_cvttps2dq_xmm1xmm2();
+    test_movd_xmm1eax();
+    test_movd_eaxxmm2();
+    test_movdqa_xmm1xmm2();
+    test_movdqu_xmm1xmm2();
+    test_movq_xmm1xmm2();
+    test_packsswb_xmm1xmm2();
+    test_packssdw_xmm1xmm2();
+    test_packuswb_xmm1xmm2();
+    test_paddb_xmm1xmm2();
+    test_paddw_xmm1xmm2();
+    test_paddd_xmm1xmm2();
+    test_paddsb_xmm1xmm2();
+    test_paddsw_xmm1xmm2();
+    test_paddusb_xmm1xmm2();
+    test_paddusw_xmm1xmm2();
+    test_paddq_xmm1xmm2();
+    test_psubq_xmm1xmm2();
+    test_pand_xmm1xmm2();
+    test_pandn_xmm1xmm2();
+    test_pavgb_xmm1xmm2();
+    test_pavgw_xmm1xmm2();
+    test_pcmpeqb_xmm1xmm2();
+    test_pcmpeqd_xmm1xmm2();
+    test_pcmpeqw_xmm1xmm2();
+    test_pcmpgtb_xmm1xmm2();
+    test_pcmpgtd_xmm1xmm2();
+    test_pcmpgtw_xmm1xmm2();
+    test_pextrw_eaxxmm11();
+    test_pinsrw_xmm1eax1();
+    test_pmaddwd_xmm1xmm2();
+    test_pmaxsw_xmm1xmm2();
+    test_pmaxub_xmm1xmm2();
+    test_pminsw_xmm1xmm2();
+    test_pminub_xmm1xmm2();
+    test_pmovmskb_eaxxmm2();
+    test_pmulhuw_xmm1xmm2();
+    test_pmulhw_xmm1xmm2();
+    test_pmullw_xmm1xmm2();
+    test_pmuludq_xmm1xmm2();
+    test_por_xmm1xmm2();
+    test_psadbw_xmm1xmm2();
+    test_pshufd_xmm1xmm11();
+    test_pshufhw_xmm1xmm11();
+    test_pshuflw_xmm1xmm11();
+    test_pslldq_xmm11();
+    test_psllw_xmm11();
+    test_pslld_xmm11();
+    test_psllq_xmm11();
+    test_psll_xmm1xmm2();
+    test_psrl_xmm1xmm2();
+    test_psraw_xmm11();
+    test_psrad_xmm11();
+    test_psraw_xmm1xmm2();
+    test_psrad_xmm1xmm2();
+    test_psrldq_xmm11();
+    test_psrlw_xmm11();
+    test_psrld_xmm11();
+    test_psrlq_xmm11();
+    test_psubb_xmm1xmm2();
+    test_psubw_xmm1xmm2();
+    test_psubd_xmm1xmm2();
+    test_psubsb_xmm1xmm2();
+    test_psubsw_xmm1xmm2();
+    test_psubusb_xmm1xmm2();
+    test_psubusw_xmm1xmm2();
+    test_punpckhbw_xmm1xmm2();
+    test_punpckhwd_xmm1xmm2();
+    test_punpckhdq_xmm1xmm2();
+    test_punpckhqdq_xmm1xmm2();
+    test_punpcklbw_xmm1xmm2();
+    test_punpcklwd_xmm1xmm2();
+    test_punpckldq_xmm1xmm2();
+    test_punpcklqdq_xmm1xmm2();
+    test_pxor_xmm1xmm2();
+    test_addpd_xmm1xmm2();
+    test_addsd_xmm1xmm2();
+    test_andnpd_xmm1xmm2();
+    test_andpd_xmm1xmm2();
+    test_cmppd_xmm1xmm11();
+    test_cmpsd_xmm1xmm11();
+    test_comisd_xmm1xmm2();
+    test_cvtdq2pd_xmm1xmm2();
+    test_cvtdq2ps_xmm1xmm2();
+    test_cvtpd2dq_xmm1xmm2();
+    test_cvtpd2ps_xmm1xmm2();
+    test_cvtps2pd_xmm1xmm2();
+    test_cvtsd2si_eaxxmm2();
+    test_cvttsd2si_eaxxmm2();
+    test_cvtsd2ss_xmm1xmm2();
+    test_cvtsi2sd_xmm1eax();
+    test_cvtss2sd_xmm1xmm2();
+    test_cvttpd2dq_xmm1xmm2();
+    test_divpd_xmm1xmm2();
+    test_divsd_xmm1xmm2();
+    test_maxpd_xmm1xmm2();
+    test_maxsd_xmm1xmm2();
+    test_minpd_xmm1xmm2();
+    test_minsd_xmm1xmm2();
+    test_movapd_xmm1xmm2();
+    test_movmskpd_eaxxmm2();
+    test_movsd_xmm1xmm2();
+    test_movupd_xmm1xmm2();
+    test_mulpd_xmm1xmm2();
+    test_mulsd_xmm1xmm2();
+    test_orpd_xmm1xmm2();
+    test_shufpd_xmm1xmm11();
+    test_sqrtpd_xmm1xmm2();
+    test_sqrtsd_xmm1xmm2();
+    test_subpd_xmm1xmm2();
+    test_subsd_xmm1xmm2();
+    test_ucomisd_xmm1xmm2();
+    test_unpckhpd_xmm1xmm2();
+    test_unpcklpd_xmm1xmm2();
+    test_xorpd_xmm1xmm2();
 }

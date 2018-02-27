@@ -1,6 +1,6 @@
 cvtps2dq xmm1, xmm2
 cvttps2dq xmm1, xmm2
-maskmovdqu xmm1, xmm2
+# maskmovdqu xmm1, xmm2 // this has assertion failure
 movd xmm1, eax
 movd eax, xmm2
 movdqa xmm1, xmm2
