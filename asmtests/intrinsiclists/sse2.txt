@@ -1,9 +1,7 @@
 cvtps2dq xmm1, xmm2
 cvttps2dq xmm1, xmm2
 maskmovdqu xmm1, xmm2
-movd xmm1, rax
 movd xmm1, eax
-movd rax, xmm2
 movd eax, xmm2
 movdqa xmm1, xmm2
 movdqu xmm1, xmm2
@@ -30,12 +28,14 @@ pcmpeqw xmm1, xmm2
 pcmpgtb xmm1, xmm2
 pcmpgtd xmm1, xmm2
 pcmpgtw xmm1, xmm2
-pextrw r32, xmm1, 1
-pinsrw xmm1, r32, 1
+pextrw eax, xmm1, 1
+pinsrw xmm1, eax, 1
 pmaddwd xmm1, xmm2
-pmax xmm1, xmm2
-pmin xmm1, xmm2
-pmovmskb3 r32, xmm2
+pmaxsw xmm1, xmm2
+pmaxub xmm1, xmm2
+pminsw xmm1, xmm2
+pminub xmm1, xmm2
+pmovmskb eax, xmm2
 pmulhuw xmm1, xmm2
 pmulhw xmm1, xmm2
 pmullw xmm1, xmm2
@@ -55,7 +55,7 @@ psraw xmm1, 1
 psrad xmm1, 1
 psraw xmm1, xmm2
 psrad xmm1, xmm2
-psrldq xm m, 1
+psrldq xmm1, 1
 psrlw xmm1, 1
 psrld xmm1, 1
 psrlq xmm1, 1
@@ -86,19 +86,13 @@ cvtdq2pd xmm1, xmm2
 cvtdq2ps xmm1, xmm2
 cvtpd2dq xmm1, xmm2
 cvtpd2ps xmm1, xmm2
-cvtps2dq xmm1, xmm2
-cvttps2dq xmm1, xmm2
 cvtps2pd xmm1, xmm2
-cvtsd2si rax, xmm2
 cvtsd2si eax, xmm2
-cvttsd2si rax, xmm2
 cvttsd2si eax, xmm2
 cvtsd2ss xmm1, xmm2
-cvtsi2sd xmm1, rax
 cvtsi2sd xmm1, eax
 cvtss2sd xmm1, xmm2
 cvttpd2dq xmm1, xmm2
-cvttsd2si eax, xmm2
 divpd xmm1, xmm2
 divsd xmm1, xmm2
 maxpd xmm1, xmm2
@@ -106,7 +100,6 @@ maxsd xmm1, xmm2
 minpd xmm1, xmm2
 minsd xmm1, xmm2
 movapd xmm1, xmm2
-movmskpd rax, xmm2
 movmskpd eax, xmm2
 movsd xmm1, xmm2
 movupd xmm1, xmm2

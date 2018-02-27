@@ -2,13 +2,25 @@ addps xmm1, xmm2
 addss xmm1, xmm2
 andnps xmm1, xmm2
 andps xmm1, xmm2
-cmpps xmm1, xmm2
-cmpss xmm1, xmm2
+cmpps xmm1, xmm2, 0
+cmpps xmm1, xmm2, 1
+cmpps xmm1, xmm2, 2
+cmpps xmm1, xmm2, 3
+cmpps xmm1, xmm2, 4
+cmpps xmm1, xmm2, 5
+cmpps xmm1, xmm2, 6
+cmpps xmm1, xmm2, 7
+cmpss xmm1, xmm2, 0
+cmpss xmm1, xmm2, 1
+cmpss xmm1, xmm2, 2
+cmpss xmm1, xmm2, 3
+cmpss xmm1, xmm2, 4
+cmpss xmm1, xmm2, 5
+cmpss xmm1, xmm2, 6
+cmpss xmm1, xmm2, 7
 comiss xmm1, xmm2
 cvtsi2ss xmm1, eax
 cvtss2si eax, xmm2
-cvtss2si rax, xmm2
-cvttss2si rax, xmm2
 cvttss2si eax, xmm2
 divps xmm1, xmm2
 divss xmm1, xmm2
@@ -19,7 +31,6 @@ minss xmm1, xmm2
 movaps xmm1, xmm2
 movhlps xmm1, xmm2
 movlhps xmm1, xmm2
-movmskps rax, xmm2
 movmskps eax, xmm2
 movss xmm1, xmm2
 movups xmm1, xmm2

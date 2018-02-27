@@ -233,114 +233,912 @@ void  test_andps_xmm1xmm2()
     std::cout << "andps takes "<< clk << std::endl;
 }
 
-void __declspec(noinline) __cdecl run_cmpps_xmm1xmm2_10_times()
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm20_10_times()
 {
     __asm {
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
     };
 }
-void __declspec(noinline) __cdecl run_cmpps_xmm1xmm2_20_times()
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm20_20_times()
 {
     __asm {
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
-        cmpps xmm1, xmm2
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
+        cmpps xmm1, xmm2, 0
     };
 }
-void  test_cmpps_xmm1xmm2()
+void  test_cmpps_xmm1xmm20()
 {
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        run_cmpps_xmm1xmm2_10_times();
+        run_cmpps_xmm1xmm20_10_times();
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        run_cmpps_xmm1xmm2_20_times();
+        run_cmpps_xmm1xmm20_20_times();
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "cmpps takes "<< clk << std::endl;
 }
 
-void __declspec(noinline) __cdecl run_cmpss_xmm1xmm2_10_times()
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm21_10_times()
 {
     __asm {
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
     };
 }
-void __declspec(noinline) __cdecl run_cmpss_xmm1xmm2_20_times()
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm21_20_times()
 {
     __asm {
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
-        cmpss xmm1, xmm2
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
+        cmpps xmm1, xmm2, 1
     };
 }
-void  test_cmpss_xmm1xmm2()
+void  test_cmpps_xmm1xmm21()
 {
     clock_t t1 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        run_cmpss_xmm1xmm2_10_times();
+        run_cmpps_xmm1xmm21_10_times();
     }
     clock_t t2 = clock();
     for (int iterator = 0; iterator < 1000000; iterator++)
     {
-        run_cmpss_xmm1xmm2_20_times();
+        run_cmpps_xmm1xmm21_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm22_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm22_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+        cmpps xmm1, xmm2, 2
+    };
+}
+void  test_cmpps_xmm1xmm22()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm22_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm22_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm23_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm23_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+        cmpps xmm1, xmm2, 3
+    };
+}
+void  test_cmpps_xmm1xmm23()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm23_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm23_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm24_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm24_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+        cmpps xmm1, xmm2, 4
+    };
+}
+void  test_cmpps_xmm1xmm24()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm24_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm24_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm25_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm25_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+        cmpps xmm1, xmm2, 5
+    };
+}
+void  test_cmpps_xmm1xmm25()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm25_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm25_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm26_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm26_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+        cmpps xmm1, xmm2, 6
+    };
+}
+void  test_cmpps_xmm1xmm26()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm26_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm26_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm27_10_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+    };
+}
+void __declspec(noinline) __cdecl run_cmpps_xmm1xmm27_20_times()
+{
+    __asm {
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+        cmpps xmm1, xmm2, 7
+    };
+}
+void  test_cmpps_xmm1xmm27()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm27_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpps_xmm1xmm27_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpps takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm20_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm20_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+        cmpss xmm1, xmm2, 0
+    };
+}
+void  test_cmpss_xmm1xmm20()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm20_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm20_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm21_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm21_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+        cmpss xmm1, xmm2, 1
+    };
+}
+void  test_cmpss_xmm1xmm21()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm21_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm21_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm22_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm22_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+        cmpss xmm1, xmm2, 2
+    };
+}
+void  test_cmpss_xmm1xmm22()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm22_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm22_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm23_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm23_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+        cmpss xmm1, xmm2, 3
+    };
+}
+void  test_cmpss_xmm1xmm23()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm23_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm23_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm24_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm24_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+        cmpss xmm1, xmm2, 4
+    };
+}
+void  test_cmpss_xmm1xmm24()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm24_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm24_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm25_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm25_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+        cmpss xmm1, xmm2, 5
+    };
+}
+void  test_cmpss_xmm1xmm25()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm25_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm25_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm26_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm26_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+        cmpss xmm1, xmm2, 6
+    };
+}
+void  test_cmpss_xmm1xmm26()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm26_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm26_20_times();
+    }
+    clock_t t3 = clock();
+    clock_t clk = (t3 - t2) - (t2 - t1);
+    std::cout << "cmpss takes "<< clk << std::endl;
+}
+
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm27_10_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+    };
+}
+void __declspec(noinline) __cdecl run_cmpss_xmm1xmm27_20_times()
+{
+    __asm {
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+        cmpss xmm1, xmm2, 7
+    };
+}
+void  test_cmpss_xmm1xmm27()
+{
+    clock_t t1 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm27_10_times();
+    }
+    clock_t t2 = clock();
+    for (int iterator = 0; iterator < 1000000; iterator++)
+    {
+        run_cmpss_xmm1xmm27_20_times();
     }
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
@@ -516,120 +1314,6 @@ void  test_cvtss2si_eaxxmm2()
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "cvtss2si takes "<< clk << std::endl;
-}
-
-void __declspec(noinline) __cdecl run_cvtss2si_raxxmm2_10_times()
-{
-    __asm {
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-    };
-}
-void __declspec(noinline) __cdecl run_cvtss2si_raxxmm2_20_times()
-{
-    __asm {
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-        cvtss2si rax, xmm2
-    };
-}
-void  test_cvtss2si_raxxmm2()
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_cvtss2si_raxxmm2_10_times();
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_cvtss2si_raxxmm2_20_times();
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "cvtss2si takes "<< clk << std::endl;
-}
-
-void __declspec(noinline) __cdecl run_cvttss2si_raxxmm2_10_times()
-{
-    __asm {
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-    };
-}
-void __declspec(noinline) __cdecl run_cvttss2si_raxxmm2_20_times()
-{
-    __asm {
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-        cvttss2si rax, xmm2
-    };
-}
-void  test_cvttss2si_raxxmm2()
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_cvttss2si_raxxmm2_10_times();
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_cvttss2si_raxxmm2_20_times();
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "cvttss2si takes "<< clk << std::endl;
 }
 
 void __declspec(noinline) __cdecl run_cvttss2si_eaxxmm2_10_times()
@@ -1200,63 +1884,6 @@ void  test_movlhps_xmm1xmm2()
     clock_t t3 = clock();
     clock_t clk = (t3 - t2) - (t2 - t1);
     std::cout << "movlhps takes "<< clk << std::endl;
-}
-
-void __declspec(noinline) __cdecl run_movmskps_raxxmm2_10_times()
-{
-    __asm {
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-    };
-}
-void __declspec(noinline) __cdecl run_movmskps_raxxmm2_20_times()
-{
-    __asm {
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-        movmskps rax, xmm2
-    };
-}
-void  test_movmskps_raxxmm2()
-{
-    clock_t t1 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_movmskps_raxxmm2_10_times();
-    }
-    clock_t t2 = clock();
-    for (int iterator = 0; iterator < 1000000; iterator++)
-    {
-        run_movmskps_raxxmm2_20_times();
-    }
-    clock_t t3 = clock();
-    clock_t clk = (t3 - t2) - (t2 - t1);
-    std::cout << "movmskps takes "<< clk << std::endl;
 }
 
 void __declspec(noinline) __cdecl run_movmskps_eaxxmm2_10_times()
