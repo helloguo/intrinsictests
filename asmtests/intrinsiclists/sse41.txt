@@ -1,0 +1,48 @@
+blendpd xmm1, xmm2, 1
+blendps xmm1, xmm2, 1
+blendvpd xmm1, xmm2
+blendvps xmm1, xmm2
+dppd xmm1, xmm2
+dpps xmm1, xmm2
+extractps xmm1, xmm2, 1
+insertps xmm1, xmm2, 1
+mpsadbw xmm1, xmm2, 1
+packusdw xmm1, xmm2
+pblenvb xmm1, xmm2
+pblendw xmm1, xmm2, 1
+pcmpeqq xmm1, xmm2
+pextrb rax, xmm1, 1
+pextrw rax, xmm1, 1
+pextrd rax, xmm1, 1
+phminposuw xmm1,xmm2
+pinsrb xmm1, rax, 1
+pinsrw xmm1, rax, 1
+pinsrd xmm1, rax, 1
+pmaxsb xmm1, xmm2
+pmaxsd xmm1, xmm2
+pmaxuw xmm1, xmm2
+pmaxud xmm1, xmm2
+pminsb xmm1, xmm2
+pminsd xmm1, xmm2
+pminuw xmm1, xmm2
+pminud xmm1, xmm2
+pmovsxbd xmm1, xmm2
+pmovsxbw xmm1, xmm2
+pmovsxbq xmm1, xmm2
+pmovsxwd xmm1, xmm2
+pmovsxwq xmm1, xmm2
+pmovsxdq xmm1, xmm2
+pmovzxbd xmm1, xmm2
+pmovzxbw xmm1, xmm2
+pmovzxbq xmm1, xmm2
+pmovzxwd xmm1, xmm2
+pmovzxwq xmm1, xmm2
+pmovzxdq xmm1, xmm2
+pmuldq xmm1, xmm2
+pmulld xmm1, xmm2
+ptest xmm1, xmm2
+roundpd xmm1, xmm2, 1
+roundps xmm1, xmm2, 1
+roundsd xmm1, xmm2, 1
+roundss xmm1, xmm2, 1
+# use "# " to comment the line if you do not want to generate test for one specific hardware instruction

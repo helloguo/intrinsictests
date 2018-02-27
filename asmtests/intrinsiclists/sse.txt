@@ -1,0 +1,47 @@
+addps xmm1, xmm2
+addss xmm1, xmm2
+andnps xmm1, xmm2
+andps xmm1, xmm2
+cmpps xmm1, xmm2
+cmpss xmm1, xmm2
+comiss xmm1, xmm2
+cvtsi2ss xmm1, eax
+cvtss2si eax, xmm2
+cvtss2si rax, xmm2
+cvttss2si rax, xmm2
+cvttss2si eax, xmm2
+divps xmm1, xmm2
+divss xmm1, xmm2
+maxps xmm1, xmm2
+maxss xmm1, xmm2
+minps xmm1, xmm2
+minss xmm1, xmm2
+movaps xmm1, xmm2
+movhlps xmm1, xmm2
+movlhps xmm1, xmm2
+movmskps rax, xmm2
+movmskps eax, xmm2
+movss xmm1, xmm2
+movups xmm1, xmm2
+mulps xmm1, xmm2
+mulss xmm1, xmm2
+orps xmm1, xmm2
+rcpps xmm1, xmm2
+rcpss xmm1, xmm2
+rsqrtps xmm1, xmm2
+rsqrtss xmm1, xmm2
+shufps xmm1, xmm2, 1
+sqrtps xmm1, xmm2
+sqrtss xmm1, xmm2
+subps xmm1, xmm2
+subss xmm1, xmm2
+ucomiss xmm1, xmm2
+unpckhps xmm1, xmm2
+unpcklps xmm1, xmm2
+xorps xmm1, xmm2
+# lfence
+# mfence
+# sfence
+# stmxcsr
+# fxsave
+# use "# " to comment the line if you do not want to generate test for one specific hardware instruction

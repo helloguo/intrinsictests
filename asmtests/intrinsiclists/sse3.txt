@@ -1,0 +1,10 @@
+addsubpd xmm1, xmm2
+addsubps xmm1, xmm2
+haddpd xmm1, xmm2
+haddps xmm1, xmm2
+hsubpd xmm1, xmm2
+hsubps xmm1, xmm2
+movddup xmm1, xmm2
+movshdup xmm1, xmm2
+movsldup xmm1, xmm2
+# use "# " to comment the line if you do not want to generate test for one specific hardware instruction

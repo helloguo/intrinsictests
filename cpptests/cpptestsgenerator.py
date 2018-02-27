@@ -24,11 +24,6 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
     contents += "// The return value is the execution time for 1000000 * 10 times, which equals (time2 - time1)\n"
     contents += "#include <time.h>\n"
     contents += "#include <iostream>\n"
-    contents += "#include \"xmmintrin.h\"\n"
-    contents += "#include \"emmintrin.h\"\n"
-    contents += "#include \"pmmintrin.h\"\n"
-    contents += "#include \"tmmintrin.h\"\n"
-    contents += "#include \"smmintrin.h\"\n"
 
     with open(intrinsicDefFile,'r') as f:
         for line in f:
