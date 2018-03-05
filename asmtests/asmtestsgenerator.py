@@ -44,17 +44,25 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
                     element = element[:-1]
                 parameters += element
 
-            func1 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_10_times()\n"
+            func1 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_5_times(int * addr)\n"
             func1 += "{\n"
             func1 += "    __asm {\n"
+            func1 += ("        mov eax, addr\n")
+            func1 += ("        movdqu xmm0, XMMWORD PTR[eax]\n")
+            func1 += ("        movdqu xmm1, xmm0\n")
+            func1 += ("        movdqu xmm2, xmm0\n")
             for i in range(0, 5):
                 func1 += ("        " + line)
             func1 += "    };\n"
             func1 += "}\n"
 
-            func2 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_20_times()\n"
+            func2 = "void __declspec(noinline) __cdecl run_" + instOpcode + "_" + parameters + "_105_times(int * addr)\n"
             func2 += "{\n"
             func2 += "    __asm {\n"
+            func2 += ("        mov eax, addr\n")
+            func2 += ("        movdqu xmm0, XMMWORD PTR[eax]\n")
+            func2 += ("        movdqu xmm1, xmm0\n")
+            func2 += ("        movdqu xmm2, xmm0\n")
             for i in range(0, 105):
                 func2 += ("        " + line)
             func2 += "    };\n"
@@ -66,15 +74,16 @@ def genHeaderFiles(intrinsicLevel, intrinsicListsDirectory, generatedFilesDirect
 
             intrinsicTestDefinition += "void  test_" + instOpcode + "_" + parameters + "()\n"
             intrinsicTestDefinition += "{\n"
+            intrinsicTestDefinition += "    int foo [4] = {10, 20, 30, 40};\n"
             intrinsicTestDefinition += "    clock_t t1 = clock();\n"
             intrinsicTestDefinition += "    for (int iterator = 0; iterator < 1000000; iterator++)\n"
             intrinsicTestDefinition += "    {\n"
-            intrinsicTestDefinition += ("        run_" + instOpcode + "_" + parameters + "_10_times();\n")
+            intrinsicTestDefinition += ("        run_" + instOpcode + "_" + parameters + "_5_times(foo);\n")
             intrinsicTestDefinition += "    }\n"
             intrinsicTestDefinition += "    clock_t t2 = clock();\n"
             intrinsicTestDefinition += "    for (int iterator = 0; iterator < 1000000; iterator++)\n"
             intrinsicTestDefinition += "    {\n"
-            intrinsicTestDefinition += ("        run_" + instOpcode + "_" + parameters + "_20_times();\n")
+            intrinsicTestDefinition += ("        run_" + instOpcode + "_" + parameters + "_105_times(foo);\n")
             intrinsicTestDefinition += "    }\n"
             intrinsicTestDefinition += "    clock_t t3 = clock();\n"
             intrinsicTestDefinition += "    clock_t clk = (t3 - t2) - (t2 - t1);\n"
